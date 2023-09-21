@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	height: 119px;
+}
+
+footer {
+	background-color: aqua;
+	height: 200px;
+}
+
+.body {
+	height: 500px;
+}
+
+.header-navbar {
+	background-color: green;
+	height: 24%;
+}
+
+.header-container {
+	background-color: blueviolet;
+	height: 76%;
+}
