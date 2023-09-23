@@ -685,7 +685,7 @@ chức năng kia */
 
 .header__cart-icon {
     font-size: 2.4rem;
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 
 /* số 3 trên giỏ hàng để thông báo  */
@@ -711,7 +711,7 @@ chức năng kia */
 .header__search-input {
     width: 100%;
     height: 100%;
-    border: none;
+    border: 2px solid #ccc;
     font-size: 1.4rem;
     outline: none;
     color: var(--text-color);
@@ -724,7 +724,7 @@ chức năng kia */
 .header__search-btn {
     background-color: var(--primary-color);
     width: 60px;
-    height: 32px;
+    height: 40px;
     border: none;
     outline: none;
     border-radius: 2px;
@@ -874,6 +874,22 @@ chức năng kia */
     display: block;
 }
 
+.header__menu {
+    
+}
+
+.header__menu-item {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 900;
+    font-size: 16px;
+    
+    margin:0 10px;
+}
+
+.header__menu-item:first-child {
+    margin-left: 40px;
+}
 
 .body {
 	height: 500px;
@@ -883,6 +899,6 @@ chức năng kia */
 
 
 footer {
-	background-color: aqua;
+	background-color: var(--white-color);
 	height: 200px;
 }
