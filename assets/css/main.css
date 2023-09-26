@@ -177,7 +177,7 @@ chức năng kia */
 	position: absolute;
 	/* Để cho khi di chuột vào thông báo nó hiện ra
     bảng thông báo sẽ che đi mấy kia */
-	z-index: 1;
+	z-index: 8;
 	top: 118%;
 	right: 0;
 	width: 404px;
@@ -863,6 +863,7 @@ img {
 /* Body */
 .body {
 	max-width: var(--max-width-primary);
+    margin: auto;
 	padding: 0 20px;
 	overflow: hidden;
 }
@@ -930,7 +931,80 @@ img {
 	font-size: 12px;
 }
 
-footer {
+.footer {
 	background-color: var(--white-color);
-	height: 200px;
+	/* height: 200px; */
+}
+
+
+.footer__heading {
+	margin-top: 38px;
+	margin-bottom: 30px;
+}
+
+.footer-list {
+
+}
+
+.footer-item {
+	padding-bottom: 12px;
+	display: block;
+	list-style: none;
+
+}
+
+.footer-item__link {
+	text-decoration: none;
+	color: var(--text-color);
+	line-height: 21px;
+}
+
+.footer-item__link:hover {
+	text-decoration: underline;
+}
+
+.footer__list-item {
+	display: flex;
+}
+
+.footer__list-item-title {
+	flex:1;
+	margin-bottom: 25px;
+}
+
+.footer__list-item-content {
+	flex:2;
+	line-height: 17px;
+	font-size: 14px;	
+	padding-left: 10px;
+}
+
+.footer__list-item-content p {
+	margin-bottom: 22px;
+}
+
+.footer__list-item-content a {
+	text-decoration: none;
+	color: var(--text-color);
+	margin-bottom: 20px;
+}
+
+.footer__list-item-content a:hover {
+	text-decoration: underline;	
+
+}
+
+.footer-app {
+	display: flex;
+	margin-top: 30px;
+}
+
+.footer-app-img {
+	flex:1;
+	width: 33.33333%;
+	padding: 0 6px;
+}
+
+.footer-app-bct {
+	width: 46% ;
 }

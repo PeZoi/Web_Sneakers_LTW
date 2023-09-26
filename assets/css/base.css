@@ -2,7 +2,7 @@
 
 :root {
 	--color-primary: #d80d0d;
-	--max-width-primary: 1240px;
+	--max-width-primary: 1220px;
 	--primary-color: #000;
 	--white-color: #fff;
 	--black-color: #000;
@@ -101,4 +101,10 @@ Button style */
 	color: #949494;
 	cursor: default;
 	background-color: #c3c3c3;
+}
+
+.underline {
+	height: 1px;
+	background-color: #ccc;
+	margin-top: 24px;
 }
