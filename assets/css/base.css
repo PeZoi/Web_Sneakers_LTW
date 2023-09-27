@@ -2,7 +2,7 @@
 
 :root {
 	--color-primary: #d80d0d;
-	--max-width-primary: 1220px;
+	--max-width-primary: 1200px;
 	--primary-color: #000;
 	--white-color: #fff;
 	--black-color: #000;
@@ -23,8 +23,47 @@
 }
 
 html {
+	margin-top: 10px;
 	font-size: 14px;
 	font-family: "Roboto", sans-serif;
+}
+
+img {
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style: none;
+}
+
+/* Icon Star */
+.rating-star {
+	width: 16px;
+	min-width: 16px;
+	height: 16px;
+	display: block;
+	margin-right: 3px;
+	background-color: #ffbc59;
+	-webkit-mask-image: url(https://asset.vuahanghieu.com/assets/images/rating-star.svg);
+	mask-image: url(https://asset.vuahanghieu.com/assets/images/rating-star.svg);
+	-webkit-mask-size: contain;
+	mask-size: contain;
+}
+
+.rating-star.rating-half {
+	background: #ffbc59;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 188, 89, 1) 0,
+		rgba(255, 188, 89, 1) 50%,
+		rgba(214, 218, 223, 1) 50%,
+		rgba(214, 218, 223, 1) 100%
+	);
 }
 
 /* Modal */
@@ -104,7 +143,20 @@ Button style */
 }
 
 .underline {
-	height: 1px;
+	width: 100%;
+	margin: auto;
+	height: 1.5px;
 	background-color: #ccc;
-	margin-top: 24px;
+	margin-top: 12px;
+}
+
+.text-wrap {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	width: 100%;
+	line-height: 1.4;
 }

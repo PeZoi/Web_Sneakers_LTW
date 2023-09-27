@@ -1,0 +1,254 @@
+.brand-name {
+	font-size: 18px;
+}
+.shoe-name {
+	margin: 12px 0;
+}
+.shoe-information__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 50px;
+	margin-bottom: 12px;
+}
+.shoe-information__container-item {
+	font-size: 16px;
+}
+.shoe-rating {
+	display: flex;
+	align-items: center;
+}
+.shoe-rating-star {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 8px;
+}
+
+.information__bottom {
+	margin-top: 12px;
+}
+
+.information__bottom-right {
+	padding-right: 12px;
+}
+.shoe__price-container {
+	margin-bottom: 12px;
+}
+
+.shoe__price-container .new-price {
+	font-size: 35px;
+}
+
+.shoe__price-detail .sale-price {
+	color: #aaa;
+	font-size: 25px;
+}
+.shoe__price-detail .discout {
+	color: var(--color-primary);
+	margin-left: 12px;
+}
+
+.shoe__information-detail-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+.shoe__information-detail-item .infor-title {
+	width: 110px;
+}
+.shoe__information-detail-item .infor-phone-number {
+	color: var(--color-primary);
+	margin-right: 8px;
+}
+.shoe__information-detail-item .infor-freeship {
+	color: var(--color-primary);
+}
+
+.shoe__size-box-title {
+	font-size: 16px;
+}
+.shoe__size-box-wrapper {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.shoe__size-box-item {
+	padding: 10px 12px;
+	border: 1px solid black;
+	margin: 8px;
+	margin-left: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.shoe__size-box-item:hover {
+	color: var(--color-primary);
+	border: 1px solid var(--color-primary);
+}
+
+.shoe__add {
+	display: flex;
+	text-align: center;
+	margin: 12px 0;
+}
+
+.shoe__add-cart,
+.shoe__buy-now {
+	width: 50%;
+	background-color: black;
+	font-weight: bold;
+	color: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 13px 12px;
+	margin: 0 8px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.shoe__add-cart {
+	margin-left: 0;
+}
+
+.shoe__buy-now {
+	margin-right: 0px;
+}
+
+.shoe__add-cart:hover,
+.shoe__buy-now:hover {
+	color: black;
+	background-color: white;
+}
+
+.shoe__sharing {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.shoe__sharing-social {
+	display: flex;
+	align-items: center;
+}
+
+.shoe__sharing-social-icon {
+	margin: 0 3px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.shoe__sharing-social-icon:hover {
+	opacity: 0.7;
+}
+
+.shoe__sharing-social-icon:first-of-type {
+	margin-left: 12px;
+}
+
+.shoe__sharing-like {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.shoe__sharing-like-value {
+	margin-left: 5px;
+}
+
+.authentic-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	padding: 8px 12px;
+	margin-bottom: 16px;
+}
+
+.authentic-content {
+	margin-left: 12px;
+	line-height: 21px;
+}
+.authentic-title {
+	font-size: 14px;
+	font-weight: bold;
+}
+.authentic-text {
+	font-size: 13px;
+}
+
+.product-special-box {
+	border: 1px solid #ccc;
+	padding: 8px 12px;
+	margin-bottom: 16px;
+}
+.product-special-content li {
+	display: flex;
+	align-items: center;
+}
+.product-special-icon {
+	margin-right: 16px;
+}
+.product-special-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 16px;
+}
+.product-rating {
+	display: flex;
+	align-items: center;
+}
+
+.product-verify {
+	color: #2d2d2d;
+	padding: 10px 0;
+	margin-top: 2px;
+	border-top: 1px solid #e1e1e1;
+}
+
+.product-verify img {
+	margin-right: 8px;
+}
+
+.product-special-contact {
+	margin-top: 12px;
+}
+
+.product-special-contact-link {
+	display: inline-block;
+	padding: 10px 60px;
+	border: 2px solid black;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.product-special-contact-text {
+	line-height: 22px;
+}
+
+.product-special-contact-text a {
+	color: #0039cf;
+}
+
+.cart-report {
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	line-height: 22px;
+}
+
+.cart-report img {
+	margin-right: 12px;
+}
+
+.cart-report-link {
+	color: #0039cf;
+	cursor: pointer;
+}
