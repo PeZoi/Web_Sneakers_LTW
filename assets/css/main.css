@@ -701,16 +701,25 @@ chức năng kia */
 	outline: none;
 	border-radius: 2px;
 	margin-right: 3px;
+	/* border: 1px solid #ccc; */
+	transition: all 0.5s;
 }
 
 .header__search-btn:hover {
 	cursor: pointer;
-	background-color: #fb6455;
+	/* color: black;
+	background-color: white; */
+	opacity: 0.6;
 }
+
+/* .header__search-btn:hover .header__search-btn-icon {
+	color: black;
+} */
 
 .header__search-btn-icon {
 	font-size: 1.4rem;
 	color: var(--white-color);
+	transition: all 0.5s;
 }
 
 .header__search-option {
@@ -843,16 +852,47 @@ chức năng kia */
 
 .header__menu {
 	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
+.header__menu-item:hover::after{
+	/* transform: scale(1); */
+	width: 100%;
+	display: block;
+}
+
+
+
 .header__menu-item {
+	position: relative;
 	text-decoration: none;
 	color: var(--text-color);
 	font-weight: 900;
 	font-size: 16px;
-
+	display: block;
 	margin: 0 10px;
+	/* padding: 10px 0; */
 }
+
+
+.header__menu-item::after {
+	content: "";
+	top: calc(100% + 6px);
+	left: 0;
+	position:absolute;
+	display: block;
+	bottom: 10px;
+	height: 2px;
+	background-color: #ccc;
+	width: 0px;
+	transition: all var(--transition-move) 0.4s 0.1s;
+}
+
+
+
 
 /* Body */
 .body {
