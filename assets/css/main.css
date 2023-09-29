@@ -701,20 +701,13 @@ chức năng kia */
 	outline: none;
 	border-radius: 2px;
 	margin-right: 3px;
-	/* border: 1px solid #ccc; */
 	transition: all 0.5s;
 }
 
 .header__search-btn:hover {
 	cursor: pointer;
-	/* color: black;
-	background-color: white; */
-	opacity: 0.6;
+	opacity: 0.8;
 }
-
-/* .header__search-btn:hover .header__search-btn-icon {
-	color: black;
-} */
 
 .header__search-btn-icon {
 	font-size: 1.4rem;
@@ -858,18 +851,15 @@ chức năng kia */
 	align-items: center;
 }
 
-.header__menu-item:hover::after{
+.header__menu-item:hover::after {
 	/* transform: scale(1); */
 	width: 100%;
 	display: block;
 }
 
-
-
 .header__menu-item {
 	position: relative;
 	text-decoration: none;
-	color: var(--text-color);
 	font-weight: 900;
 	font-size: 16px;
 	display: block;
@@ -877,22 +867,18 @@ chức năng kia */
 	/* padding: 10px 0; */
 }
 
-
 .header__menu-item::after {
 	content: "";
 	top: calc(100% + 6px);
 	left: 0;
-	position:absolute;
+	position: absolute;
 	display: block;
 	bottom: 10px;
 	height: 2px;
-	background-color: #ccc;
+	background-color: black;
 	width: 0px;
 	transition: all var(--transition-move) 0.4s 0.1s;
 }
-
-
-
 
 /* Body */
 .body {
@@ -907,6 +893,10 @@ chức năng kia */
 	overflow: hidden;
 }
 
+.banner img {
+	cursor: pointer;
+}
+
 .banner__left {
 	width: 100%;
 }
@@ -917,6 +907,7 @@ chức năng kia */
 }
 
 .banner__bottom {
+	cursor: pointer;
 	overflow: hidden;
 }
 
@@ -938,9 +929,12 @@ chức năng kia */
 
 .brand__product-item {
 	display: block;
+	position: relative;
+	transition: all 0.5s ease;
 }
 
-.brand__product-item :hover {
+.brand__product-item:hover {
+	transform: translateY(-4px);
 	cursor: pointer;
 }
 
@@ -971,6 +965,10 @@ chức năng kia */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.brand-item:hover {
+	opacity: 0.7;
 }
 
 .brand-item img {
