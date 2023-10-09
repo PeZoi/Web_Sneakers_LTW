@@ -1,0 +1,16 @@
+/* Phần sub-footer detail */
+
+.sub-footer {
+	margin-top: 24px;
+	font-size: 14px;
+	line-height: 40px;
+
+}
+
+.sub-footer__heading {
+	padding-left: 12px;
+}
+
+.sub-footer__content {
+	padding-left: 24px;
+}
