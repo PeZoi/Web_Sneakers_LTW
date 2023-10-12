@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-	--color-primary: #d80d0d;
+	--color-primary: #4285f4;
 	--max-width-primary: 1200px;
 	--primary-color: #000;
 	--white-color: #fff;
 	--black-color: #000;
-	--text-color: #333;
+	--orange-color: #d80d0d;
+	--text-color: #222222;
 	--border-color: #dbdbdb;
 	--start-gold-color: #ffce3e;
 	--header-height: 155px;
@@ -15,7 +16,7 @@
 		var(--header-height) - var(--navbar-height)
 	);
 
-	--transition-move: cubic-bezier(.25, -0.59, 0.82, 1.66);
+	--transition-move: cubic-bezier(0.25, -0.59, 0.82, 1.66);
 }
 
 * {
@@ -25,7 +26,6 @@
 }
 
 html {
-	margin-top: 10px;
 	font-size: 14px;
 	font-family: "Roboto", sans-serif;
 }
@@ -109,7 +109,7 @@ Button style */
 	height: 34px;
 	text-decoration: none;
 	border: none;
-	border-radius: 2px;
+	border-radius: 4px;
 	font-size: 1.5rem;
 	padding: 0 12px;
 	outline: none;
@@ -161,4 +161,48 @@ Button style */
 	max-width: 100%;
 	width: 100%;
 	line-height: 1.4;
+}
+
+/* Input animation */
+
+.form-input {
+	width: 100%;
+	height: 50px;
+	padding: 0 15px;
+	margin: 8px 0;
+	font-size: 16px;
+	border-radius: 4px;
+	border: 1px solid #eee;
+	outline: none;
+	transition: all 0.25s ease;
+}
+
+.form-input:focus {
+	border-color: var(--color-primary);
+}
+
+.form-field {
+	position: relative;
+}
+
+.form-label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 16px;
+	color: #999;
+	pointer-events: none;
+	transition: 0.25s ease;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label {
+	top: 8px;
+	padding: 5px 10px;
+	display: inline-block;
+	background-color: var(--white-color);
+	color: var(--color-primary);
+}
+
+.form-input:not(:placeholder-shown) {
+	border-color: #d80d0d;
 }
