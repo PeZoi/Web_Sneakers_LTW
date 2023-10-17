@@ -194,6 +194,7 @@ Button style */
 	pointer-events: none;
 	transition: 0.25s ease;
 }
+
 .form-input:not(:placeholder-shown) + .form-label,
 .form-input:focus + .form-label {
 	top: 8px;
@@ -203,6 +204,6 @@ Button style */
 	color: var(--color-primary);
 }
 
-.form-input:not(:placeholder-shown) {
-	border-color: #d80d0d;
+.form-input:not(:focus) + .form-label {
+	color: #aaa;
 }

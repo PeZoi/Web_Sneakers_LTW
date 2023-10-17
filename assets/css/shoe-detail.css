@@ -45,7 +45,7 @@
 	font-size: 25px;
 }
 .shoe__price-detail .discout {
-	color: var(--color-primary);
+	color: var(--orange-color);
 	margin-left: 12px;
 }
 
@@ -59,11 +59,11 @@
 	width: 110px;
 }
 .shoe__information-detail-item .infor-phone-number {
-	color: var(--color-primary);
+	color: var(--orange-color);
 	margin-right: 8px;
 }
 .shoe__information-detail-item .infor-freeship {
-	color: var(--color-primary);
+	color: var(--orange-color);
 }
 
 .shoe__size-box-title {
@@ -87,8 +87,8 @@
 }
 
 .shoe__size-box-item:hover {
-	color: var(--color-primary);
-	border: 1px solid var(--color-primary);
+	color: var(--orange-color);
+	border: 1px solid var(--orange-color);
 }
 
 .shoe__add {
