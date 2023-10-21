@@ -846,7 +846,10 @@ chức năng kia */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
+
+
 
 .header__menu-item:hover::after {
 	width: 100%;
@@ -862,6 +865,10 @@ chức năng kia */
 	margin: 0 10px;
 	transition: 0.25s ease;
 }
+
+
+
+
 
 .header__menu-item:hover {
 	color: var(--color-primary);
