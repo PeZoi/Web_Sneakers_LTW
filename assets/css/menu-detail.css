@@ -1,0 +1,13 @@
+/* Thêm vào phần body */
+.category-title {
+	margin-bottom: 50px;
+}
+
+/* .best-brand-container {
+    background-color: #ccc;
+} */
+
+.brand__product-item {
+    border:1px solid #ccc;
+    margin-bottom: 20px;
+}
