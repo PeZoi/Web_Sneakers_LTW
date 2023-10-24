@@ -20,28 +20,28 @@
       <div class="grid wide">
          <nav class="header__navbar ">
             <ul class="header__navbar-list">
-               <li class="header__navbar-item header__navbar-item-shas-qr header__navbar-item--separate">
-                  Vào cửa hàng trên ứng dụng DH
+               <li class="header__navbar-item header__navbar-item--separate">
+                  <a href="./pages/about.html"><span class="link-text">Giới thiệu về chúng tôi</span></a>
+               </li>
+               <li class="header__navbar-item header__navbar-item--separate">
+                  <a href="#"><span class="link-text">Các chính sách của cửa hàng</span></a>
                </li>
                <li class="header__navbar-item">
-                  <span class="header__navbar-title--no-pointer">Kết nối</span>
-                  <a href="" class="header__navbar-icon-link ">
-                     <i class="header__navbar-icon fa-brands fa-facebook"></i>
-                  </a>
-                  <a href="" class="header__navbar-icon-link ">
-                     <i class="header__navbar-icon fa-brands fa-instagram"></i>
-                  </a>
+                  <a href="#"><span class="link-text">
+                        <span style="display: inline-flex; justify-content: center; align-items: center;">
+                           Liện hệ
+                           <img class="shoe__sharing-social-icon" style="margin-left: 5px;"
+                              src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="" width="18px"></span>
+                     </span></a>
                </li>
-
-
             </ul>
 
             <ul class="header__navbar-list">
                <li class="header__navbar-item header__navbar-item--has-notify">
 
                   <a href="" class="header__navbar-item-link">
-                     <i class="header__navbar-icon fa-solid fa-bell"></i>
-                     Thông báo
+                     <img src="./assets/img/icon-bell.svg" alt="" width="18px">
+                     <span class="link-text">Thông báo</span>
                   </a>
 
                   <div class="header__notify">
@@ -110,8 +110,10 @@
                            <a href="" class="header__notify-link">
                               <img src="./assets/img/shoe/anhgiay5.jpg" alt="Giày converse" class="header__notify-img">
                               <div class="header__notify-info">
-                                 <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm giày</span>
-                                 <span class="header__notify-description">Xác thực chính hãng nguồn gốc các sản phẩm giày</span>
+                                 <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm
+                                    giày</span>
+                                 <span class="header__notify-description">Xác thực chính hãng nguồn gốc các sản phẩm
+                                    giày</span>
                               </div>
                            </a>
                         </li>
@@ -125,15 +127,18 @@
                <li class="header__navbar-item ">
 
                   <a href="" class="header__navbar-item-link">
-                     <i class="header__navbar-icon fa-solid fa-circle-question"></i>
-                     Trợ giúp
+                     <img src="./assets/img/icon-help.svg" alt="" width="18px">
+                     <span class="link-text">Trợ giúp</span>
                   </a>
                </li>
                <li
                   class="header__navbar-item header__navbar-item--strong header__navbar-item--separate header__navbar-item--register">
-                  <a href="./pages/sign-up.html">Đăng ký</a>
+                  <a href="./pages/sign-up.html"><span class="link-text">Đăng ký</span>
+                  </a>
                </li>
-               <li class="header__navbar-item header__navbar-item--strong"><a href="./pages/sign-in.html">Đăng nhập</a>
+               <li class="header__navbar-item header__navbar-item--strong"><a href="./pages/sign-in.html"><span
+                        class="link-text">Đăng nhập</span>
+                  </a>
                </li>
 
                <!-- <li class="header__navbar-item header__navbar-user">
@@ -166,196 +171,200 @@
                </a>
             </div>
 
-            <div class="header__search">
-               <div class="header__search-input-wrap">
+            <div class="header-right-wrapper">
+               <div class="header__search">
+                  <div class="header__search-input-wrap">
 
-                  <input type="text" class="header__search-input" placeholder="Tìm kiếm trên DH Store">
-                  <!-- Search history -->
-                  <div class="header__search-history">
-                     <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
-                     <ul class="header__search-history-list">
-                        <li class="header__search-history-item">
-                           <a href="">Giày nike</a>
-                        </li>
-                        <li class="header__search-history-item">
-                           <a href="">Giày airforce one</a>
-                        </li>
-
-                     </ul>
+                     <div class="header__search-input-item">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm trên DH Store">
+                        <button class="header__search-btn">
+                           <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                     </div>
+                     <!-- Search history -->
+                     <!-- <div class="header__search-history">
+                        <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                        <ul class="header__search-history-list">
+                           <li class="header__search-history-item">
+                              <a href="">Giày nike</a>
+                           </li>
+                           <li class="header__search-history-item">
+                              <a href="">Giày airforce one</a>
+                           </li>
+                        </ul>
+                     </div> -->
                   </div>
+
+
+
                </div>
 
+               <!-- Cart layout -->
+               <div class="header__cart">
+                  <div class="header__cart-wrap ">
+                     <img src="./assets/img/icon-cart.svg" alt="" width="32px">
+                     <span class="header__cart-notice ">6</span>
+                     <!-- No cart: header__cart-list--no-cart -->
+                     <div class="header__cart-list  ">
+                        <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                        <span class="header__cart-list-no-cart-msg">
+                           Chưa có sản phẩm
+                        </span>
 
-               <button class="header__search-btn">
-                  <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
-               </button>
-            </div>
+                        <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                        <ul class="header__cart-list-item">
+                           <!-- Cart item -->
+                           <li class="header__cart-item">
+                              <img src="./assets/img/shoe/anhgiay6.jpg" alt="" class="header__cart-img">
+                              <div class="header__cart-item-info">
+                                 <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool Team Wellness</h5>
+                                    <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
+                                               có thể đẩy ra xa nhau được  -->
+                                    <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">1.950.000đ</span>
+                                       <span class="header__cart-item-multiply">x</span>
+                                       <span class="header__cart-item-qnt">1</span>
+                                    </div>
+                                 </div>
 
-            <!-- Cart layout -->
-            <div class="header__cart">
-               <div class="header__cart-wrap ">
-                  <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
-                  <span class="header__cart-notice ">6</span>
-                  <!-- No cart: header__cart-list--no-cart -->
-                  <div class="header__cart-list  ">
-                     <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
-                     <span class="header__cart-list-no-cart-msg">
-                        Chưa có sản phẩm
-                     </span>
+                                 <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description">
+                                       Size: 42
+                                    </span>
+                                    <span class="header__cart-item-remove">Xóa</span>
 
-                     <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
-                     <ul class="header__cart-list-item">
-                        <!-- Cart item -->
-                        <li class="header__cart-item">
-                           <img src="./assets/img/shoe/anhgiay6.jpg" alt="" class="header__cart-img">
-                           <div class="header__cart-item-info">
-                              <div class="header__cart-item-head">
-                                 <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool Team Wellness</h5>
-                                 <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                            có thể đẩy ra xa nhau được  -->
-                                 <div class="header__cart-item-price-wrap">
-                                    <span class="header__cart-item-price">1.950.000đ</span>
-                                    <span class="header__cart-item-multiply">x</span>
-                                    <span class="header__cart-item-qnt">1</span>
                                  </div>
                               </div>
+                           </li>
 
-                              <div class="header__cart-item-body">
-                                 <span class="header__cart-item-description">
-                                    Size: 42
-                                 </span>
-                                 <span class="header__cart-item-remove">Xóa</span>
+                           <li class="header__cart-item">
+                              <img src="./assets/img/shoe/anhgiay7.jpg" alt="" class="header__cart-img">
+                              <div class="header__cart-item-info">
+                                 <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool Crystal Sidestripe
+                                    </h5>
+                                    <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
+                                               có thể đẩy ra xa nhau được  -->
+                                    <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">1.950.000đ</span>
+                                       <span class="header__cart-item-multiply">x</span>
+                                       <span class="header__cart-item-qnt">1</span>
+                                    </div>
+                                 </div>
 
-                              </div>
-                           </div>
-                        </li>
+                                 <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description">
+                                       Size: 42
+                                    </span>
+                                    <span class="header__cart-item-remove">Xóa</span>
 
-                        <li class="header__cart-item">
-                           <img src="./assets/img/shoe/anhgiay7.jpg" alt="" class="header__cart-img">
-                           <div class="header__cart-item-info">
-                              <div class="header__cart-item-head">
-                                 <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool Crystal Sidestripe
-                                 </h5>
-                                 <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                            có thể đẩy ra xa nhau được  -->
-                                 <div class="header__cart-item-price-wrap">
-                                    <span class="header__cart-item-price">1.950.000đ</span>
-                                    <span class="header__cart-item-multiply">x</span>
-                                    <span class="header__cart-item-qnt">1</span>
                                  </div>
                               </div>
+                           </li>
 
-                              <div class="header__cart-item-body">
-                                 <span class="header__cart-item-description">
-                                    Size: 42
-                                 </span>
-                                 <span class="header__cart-item-remove">Xóa</span>
+                           <li class="header__cart-item">
+                              <img src="./assets/img/shoe/anhgiay8.jpg" alt="" class="header__cart-img">
+                              <div class="header__cart-item-info">
+                                 <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">Giày Sneaker Vans UA Style 36 Vintage Pop</h5>
+                                    <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
+                                               có thể đẩy ra xa nhau được  -->
+                                    <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">1.950.000đ</span>
+                                       <span class="header__cart-item-multiply">x</span>
+                                       <span class="header__cart-item-qnt">2</span>
+                                    </div>
+                                 </div>
 
-                              </div>
-                           </div>
-                        </li>
+                                 <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description">
+                                       Size: 42
+                                    </span>
+                                    <span class="header__cart-item-remove">Xóa</span>
 
-                        <li class="header__cart-item">
-                           <img src="./assets/img/shoe/anhgiay8.jpg" alt="" class="header__cart-img">
-                           <div class="header__cart-item-info">
-                              <div class="header__cart-item-head">
-                                 <h5 class="header__cart-item-name">Giày Sneaker Vans UA Style 36 Vintage Pop</h5>
-                                 <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                            có thể đẩy ra xa nhau được  -->
-                                 <div class="header__cart-item-price-wrap">
-                                    <span class="header__cart-item-price">1.950.000đ</span>
-                                    <span class="header__cart-item-multiply">x</span>
-                                    <span class="header__cart-item-qnt">2</span>
                                  </div>
                               </div>
+                           </li>
 
-                              <div class="header__cart-item-body">
-                                 <span class="header__cart-item-description">
-                                    Size: 42
-                                 </span>
-                                 <span class="header__cart-item-remove">Xóa</span>
+                           <li class="header__cart-item">
+                              <img src="./assets/img/shoe/anhgiay9.jpg" alt="" class="header__cart-img">
+                              <div class="header__cart-item-info">
+                                 <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">Giày Sneaker Vans Style 36 Moroccan Tile Check
+                                       Phối Màu</h5>
+                                    <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
+                                               có thể đẩy ra xa nhau được  -->
+                                    <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">2.200.000đ</span>
+                                       <span class="header__cart-item-multiply">x</span>
+                                       <span class="header__cart-item-qnt">2</span>
+                                    </div>
+                                 </div>
 
-                              </div>
-                           </div>
-                        </li>
+                                 <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description">
+                                       Size: 42
+                                    </span>
+                                    <span class="header__cart-item-remove">Xóa</span>
 
-                        <li class="header__cart-item">
-                           <img src="./assets/img/shoe/anhgiay9.jpg" alt="" class="header__cart-img">
-                           <div class="header__cart-item-info">
-                              <div class="header__cart-item-head">
-                                 <h5 class="header__cart-item-name">Giày Sneaker Vans Style 36 Moroccan Tile Check
-                                    Phối Màu</h5>
-                                 <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                            có thể đẩy ra xa nhau được  -->
-                                 <div class="header__cart-item-price-wrap">
-                                    <span class="header__cart-item-price">2.200.000đ</span>
-                                    <span class="header__cart-item-multiply">x</span>
-                                    <span class="header__cart-item-qnt">2</span>
                                  </div>
                               </div>
+                           </li>
 
-                              <div class="header__cart-item-body">
-                                 <span class="header__cart-item-description">
-                                    Size: 42
-                                 </span>
-                                 <span class="header__cart-item-remove">Xóa</span>
+                           <li class="header__cart-item">
+                              <img src="./assets/img/shoe/anhgiay10.jpg" alt="" class="header__cart-img">
+                              <div class="header__cart-item-info">
+                                 <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">Giày Sneaker Vans Classic New Varsity VN0A33TB43L
+                                       Màu Xám</h5>
+                                    <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
+                                               có thể đẩy ra xa nhau được  -->
+                                    <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">1.690.000đ</span>
+                                       <span class="header__cart-item-multiply">x</span>
+                                       <span class="header__cart-item-qnt">1</span>
+                                    </div>
+                                 </div>
 
-                              </div>
-                           </div>
-                        </li>
+                                 <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description">
+                                       Size: 42
+                                    </span>
+                                    <span class="header__cart-item-remove">Xóa</span>
 
-                        <li class="header__cart-item">
-                           <img src="./assets/img/shoe/anhgiay10.jpg" alt="" class="header__cart-img">
-                           <div class="header__cart-item-info">
-                              <div class="header__cart-item-head">
-                                 <h5 class="header__cart-item-name">Giày Sneaker Vans Classic New Varsity VN0A33TB43L
-                                    Màu Xám</h5>
-                                 <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                            có thể đẩy ra xa nhau được  -->
-                                 <div class="header__cart-item-price-wrap">
-                                    <span class="header__cart-item-price">1.690.000đ</span>
-                                    <span class="header__cart-item-multiply">x</span>
-                                    <span class="header__cart-item-qnt">1</span>
                                  </div>
                               </div>
+                           </li>
 
-                              <div class="header__cart-item-body">
-                                 <span class="header__cart-item-description">
-                                    Size: 42
-                                 </span>
-                                 <span class="header__cart-item-remove">Xóa</span>
+                           <li class="header__cart-item">
+                              <img src="./assets/img/shoe/anhgiay11.jpg" alt="" class="header__cart-img">
+                              <div class="header__cart-item-info">
+                                 <div class="header__cart-item-head">
+                                    <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool 36 DX Spray Phối
+                                       Màu Size 40</h5>
+                                    <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
+                                               có thể đẩy ra xa nhau được  -->
+                                    <div class="header__cart-item-price-wrap">
+                                       <span class="header__cart-item-price">2.450.000đ</span>
+                                       <span class="header__cart-item-multiply">x</span>
+                                       <span class="header__cart-item-qnt">1</span>
+                                    </div>
+                                 </div>
 
-                              </div>
-                           </div>
-                        </li>
+                                 <div class="header__cart-item-body">
+                                    <span class="header__cart-item-description">
+                                       Size: 42
+                                    </span>
+                                    <span class="header__cart-item-remove">Xóa</span>
 
-                        <li class="header__cart-item">
-                           <img src="./assets/img/shoe/anhgiay11.jpg" alt="" class="header__cart-img">
-                           <div class="header__cart-item-info">
-                              <div class="header__cart-item-head">
-                                 <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool 36 DX Spray Phối
-                                    Màu Size 40</h5>
-                                 <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                            có thể đẩy ra xa nhau được  -->
-                                 <div class="header__cart-item-price-wrap">
-                                    <span class="header__cart-item-price">2.450.000đ</span>
-                                    <span class="header__cart-item-multiply">x</span>
-                                    <span class="header__cart-item-qnt">1</span>
                                  </div>
                               </div>
+                           </li>
+                        </ul>
 
-                              <div class="header__cart-item-body">
-                                 <span class="header__cart-item-description">
-                                    Size: 42
-                                 </span>
-                                 <span class="header__cart-item-remove">Xóa</span>
-
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-
-                     <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                        <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -504,9 +513,9 @@
             <a href="./pages/shoe-detail-6.html" class="brand__product-item grid__column-2-4">
                <img src="../assets/img/Nike/anhgiay-6.jpg" alt="" width="100%" height="200" />
                <div class="brand__product-item-title text-wrap">
-                Giày Thể Thao Nike Air Force 1 ’07 ‘White Black’ CT2302-100 Màu Trắng Đen Size 40.5  
+                  Giày Thể Thao Nike Air Force 1 ’07 ‘White Black’ CT2302-100 Màu Trắng Đen Size 40.5
                </div>
-               
+
                <div class="brand__product-item-price">
                   <strong class="new-price">2.550.000 đ</strong>
                   <span class="sale-price">2.900.000 đ</span>
@@ -516,9 +525,9 @@
             <a href="./pages/shoe-detail-7.html" class="brand__product-item grid__column-2-4">
                <img src="../assets/img/Nike/anhgiay-7.jpg" alt="" width="100%" height="200" />
                <div class="brand__product-item-title text-wrap">
-                Giày Thể Thao Nike Court Vision Next Nature Black DH2987-001 Màu Đen Trắng Size 40 
+                  Giày Thể Thao Nike Court Vision Next Nature Black DH2987-001 Màu Đen Trắng Size 40
                </div>
-               
+
                <div class="brand__product-item-price">
                   <strong class="new-price">2.800.000 đ</strong>
                   <span class="sale-price">3.200.000 đ</span>
@@ -527,9 +536,9 @@
             <a href="./pages/shoe-detail-8.html" class="brand__product-item grid__column-2-4">
                <img src="../assets/img/Nike/anhgiay-8.jpg" alt="" width="100%" height="200" />
                <div class="brand__product-item-title text-wrap">
-                Giày Thể Thao Nike Revolution 6 Next Nature DC3728-005 Màu Đen Size 43 
+                  Giày Thể Thao Nike Revolution 6 Next Nature DC3728-005 Màu Đen Size 43
                </div>
-               
+
                <div class="brand__product-item-price">
                   <strong class="new-price">2.790.000 đ</strong>
                   <span class="sale-price">3.300.000 đ</span>
@@ -538,9 +547,10 @@
             <a href="./pages/shoe-detail-9.html" class="brand__product-item grid__column-2-4">
                <img src="../assets/img/Nike/anhgiay-9.jpg" alt="" width="100%" height="200" />
                <div class="brand__product-item-title text-wrap">
-                Giày Thể Thao Nike Air Jordan 1 High OG UNC University Blue 555088-134 575441-134 Màu Xanh Trắng Size 41 
+                  Giày Thể Thao Nike Air Jordan 1 High OG UNC University Blue 555088-134 575441-134 Màu Xanh Trắng Size
+                  41
                </div>
-               
+
                <div class="brand__product-item-price">
                   <strong class="new-price">2.400.000 đ</strong>
                   <span class="sale-price">2.980.000 đ</span>
@@ -549,9 +559,9 @@
             <a href="./pages/shoe-detail-10.html" class="brand__product-item grid__column-2-4">
                <img src="../assets/img/Nike/anhgiay-10.jpg" alt="" width="100%" height="200" />
                <div class="brand__product-item-title text-wrap">
-                Giày Bóng Rổ Nike KYRIE FLYTRAP III EP Black/White CD0191-001 Màu Đen Size 44.5 
+                  Giày Bóng Rổ Nike KYRIE FLYTRAP III EP Black/White CD0191-001 Màu Đen Size 44.5
                </div>
-               
+
                <div class="brand__product-item-price">
                   <strong class="new-price">2.850.000 đ</strong>
                   <span class="sale-price">3.350.000 đ</span>
@@ -562,7 +572,7 @@
 
       <hr>
 
-      
+
 
       <!-- Banner -->
       <div class="banner">

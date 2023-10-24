@@ -9,6 +9,9 @@
 }
 
 .header__navbar-list {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	list-style: none;
 	padding-left: 0;
 	margin-top: 4px 0 0 0;
@@ -126,7 +129,9 @@ chức năng kia */
 
 .header__navbar-item,
 .header__navbar-item-link {
-	display: inline-block;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
 	color: var(--text-color);
 	font-size: 1.3rem;
@@ -139,6 +144,9 @@ chức năng kia */
 	color: rgba(0, 0, 0, 0.4);
 	cursor: pointer;
 }
+.link-text {
+	font-size: 14px;
+}
 
 .header__navbar-item--strong {
 	font-weight: 400;
@@ -148,10 +156,10 @@ chức năng kia */
 	content: "";
 	display: block;
 	position: absolute;
-	border-left: 1px solid #fb9c36;
+	border-left: 1px solid #aaa;
 	height: 14px;
 	right: -9px;
-	top: 4px;
+	top: 7px;
 }
 
 .header__navbar-icon-link {
@@ -663,52 +671,70 @@ chức năng kia */
 .header__cart-notice {
 	position: absolute;
 	top: -5px;
-	right: -5px;
+	right: 0px;
 	padding: 1px 7px;
-	background-color: var(--white-color);
-	color: var(--primary-color);
+	background-color: var(--color-primary);
+	color: var(--white-color);
 	border-radius: 10px;
-	font-size: 1.4rem;
+	font-size: 12px;
 	line-height: 1.4rem;
-	border: 1px solid #ee4d2d;
 }
 
 .header__search-input-wrap {
-	flex: 1;
 	height: 100%;
 	position: relative;
 }
 
+.header__search-input-item {
+	margin-left: 50px;
+	width: 400px;
+	display: flex;
+	position: relative;
+}
+
+.header-right-wrapper {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
 .header__search-input {
 	width: 100%;
-	height: 100%;
-	border: 2px solid #ccc;
-	font-size: 1.4rem;
+	height: 40px;
+	border: 1px solid #ccc;
+	font-size: 16px;
 	outline: none;
 	color: var(--text-color);
 	padding: 0 16px;
-	border-radius: 2px;
+	border-radius: 60px;
 }
 
 .header__search-btn {
-	background-color: var(--primary-color);
+	position: absolute;
+	right: -2px;
+	top: 50%;
+	transform: translateY(-50%);
 	width: 60px;
-	height: 40px;
+	height: 38px;
 	border: none;
 	outline: none;
-	border-radius: 2px;
+	border-radius: 60px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
 	margin-right: 3px;
 	transition: all 0.5s;
 }
 
 .header__search-btn:hover {
 	cursor: pointer;
+	background-color: #aaaaaa13;
 	opacity: 0.8;
 }
 
 .header__search-btn-icon {
 	font-size: 1.4rem;
-	color: var(--white-color);
+	/* color: var(--white-color); */
 	transition: all 0.5s;
 }
 
@@ -842,14 +868,11 @@ chức năng kia */
 
 .header__menu {
 	width: 100%;
+	margin: 0 12px;
 	position: relative;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-
 }
-
-
 
 .header__menu-item:hover::after {
 	width: 100%;
@@ -862,13 +885,17 @@ chức năng kia */
 	font-weight: 900;
 	font-size: 16px;
 	display: block;
-	margin: 0 10px;
+	margin: 0 18px;
 	transition: 0.25s ease;
 }
 
+.header__menu-item.active {
+	color: var(--color-primary);
+}
 
-
-
+.header__menu-item:first-child {
+	margin-left: 0;
+}
 
 .header__menu-item:hover {
 	color: var(--color-primary);
@@ -937,6 +964,7 @@ chức năng kia */
 .brand__product-item {
 	display: block;
 	position: relative;
+	margin-bottom: 20px;
 	transition: all 0.5s ease;
 }
 
@@ -987,8 +1015,6 @@ chức năng kia */
 	height: 100%;
 	object-fit: contain;
 }
-
-
 
 /* Footer */
 .footer {
