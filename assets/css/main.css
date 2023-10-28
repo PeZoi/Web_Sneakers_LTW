@@ -928,6 +928,7 @@ chức năng kia */
 }
 
 .banner__left {
+	position: relative;
 	width: 100%;
 }
 
