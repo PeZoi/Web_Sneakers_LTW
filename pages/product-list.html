@@ -5,36 +5,15 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>DH Store Sneakers</title>
-
-   <link rel="stylesheet" href="./assets/css/base.css">
-   <link rel="stylesheet" href="./assets/css/main.css">
-   <link rel="stylesheet" href="./assets/css/grid.css">
+   <link rel="stylesheet" href="../assets/css/base.css">
+   <link rel="stylesheet" href="../assets/css/main.css">
+   <link rel="stylesheet" href="../assets/css/menu-detail.css">
+   <link rel="stylesheet" href="../assets/css/shoe-detail.css">
+   <link rel="stylesheet" href="../assets/css/grid.css">
+   <link rel="stylesheet" href="../assets/css/product-list.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-   <!-- slick -->
-   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-   <style>
-      .slick-prev {
-         position: absolute;
-         top: 50%;
-         transform: translateY(-50%);
-         z-index: 2;
-      }
-
-      .slick-next {
-         position: absolute;
-         top: 50%;
-         right: 0;
-         transform: translateY(-50%);
-         z-index: 2;
-      }
-   </style>
 </head>
 
 <body>
@@ -44,10 +23,10 @@
          <nav class="header__navbar ">
             <ul class="header__navbar-list">
                <li class="header__navbar-item header__navbar-item--separate">
-                  <a href="./pages/about.html"><span class="link-text">Giới thiệu về chúng tôi</span></a>
+                  <a href="../pages/about.html"><span class="link-text">Giới thiệu về chúng tôi</span></a>
                </li>
                <li class="header__navbar-item header__navbar-item--separate">
-                  <a href="./pages/warranty-policy.html"><span class="link-text">Các chính sách của cửa hàng</span></a>
+                  <a href="#"><span class="link-text">Các chính sách của cửa hàng</span></a>
                </li>
                <li class="header__navbar-item">
                   <a href="#"><span class="link-text">
@@ -63,7 +42,7 @@
                <li class="header__navbar-item header__navbar-item--has-notify">
 
                   <a href="" class="header__navbar-item-link">
-                     <img src="./assets/img/icon-bell.svg" alt="" width="18px">
+                     <img src="../assets/img/icon-bell.svg" alt="" width="18px">
                      <span class="link-text">Thông báo</span>
                   </a>
 
@@ -74,7 +53,7 @@
                      <ul class="header__notify-list">
                         <li class="header__notify-item header__notify-item--viewed">
                            <a href="" class="header__notify-link">
-                              <img src="./assets/img/shoe/anhgiay1.jpg" alt="Giày converse" class="header__notify-img">
+                              <img src="../assets/img/shoe/anhgiay1.jpg" alt="Giày converse" class="header__notify-img">
                               <div class="header__notify-info">
                                  <span class="header__notify-name">
                                     Xác thực chính hãng nguồn gốc các sản phẩm giày
@@ -88,7 +67,7 @@
 
                         <li class="header__notify-item header__notify-item--viewed ">
                            <a href="" class="header__notify-link">
-                              <img src="./assets/img/shoe/anhgiay2.jpg" alt="Giày converse" class="header__notify-img">
+                              <img src="../assets/img/shoe/anhgiay2.jpg" alt="Giày converse" class="header__notify-img">
                               <div class="header__notify-info">
                                  <span class="header__notify-name">
                                     Xác thực chính hãng nguồn gốc các sản phẩm giày
@@ -102,7 +81,7 @@
 
                         <li class="header__notify-item header__notify-item--viewed">
                            <a href="" class="header__notify-link">
-                              <img src="./assets/img/shoe/anhgiay3.jpg" alt="Giày converse" class="header__notify-img">
+                              <img src="../assets/img/shoe/anhgiay3.jpg" alt="Giày converse" class="header__notify-img">
                               <div class="header__notify-info">
                                  <span class="header__notify-name">
                                     Xác thực chính hãng nguồn gốc các sản phẩm giày
@@ -116,7 +95,7 @@
 
                         <li class="header__notify-item header__notify-item--viewed">
                            <a href="" class="header__notify-link">
-                              <img src="./assets/img/shoe/anhgiay4.jpg" alt="Giày converse" class="header__notify-img">
+                              <img src="../assets/img/shoe/anhgiay4.jpg" alt="Giày converse" class="header__notify-img">
                               <div class="header__notify-info">
                                  <span class="header__notify-name">
                                     Xác thực chính hãng nguồn gốc các sản phẩm giày
@@ -131,7 +110,7 @@
 
                         <li class="header__notify-item header__notify-item--viewed">
                            <a href="" class="header__notify-link">
-                              <img src="./assets/img/shoe/anhgiay5.jpg" alt="Giày converse" class="header__notify-img">
+                              <img src="../assets/img/shoe/anhgiay5.jpg" alt="Giày converse" class="header__notify-img">
                               <div class="header__notify-info">
                                  <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm
                                     giày</span>
@@ -150,47 +129,47 @@
                <li class="header__navbar-item ">
 
                   <a href="" class="header__navbar-item-link">
-                     <img src="./assets/img/icon-help.svg" alt="" width="18px">
+                     <img src="../assets/img/icon-help.svg" alt="" width="18px">
                      <span class="link-text">Trợ giúp</span>
                   </a>
                </li>
                <li
                   class="header__navbar-item header__navbar-item--strong header__navbar-item--separate header__navbar-item--register">
-                  <a href="./pages/sign-up.html"><span class="link-text">Đăng ký</span>
+                  <a href="../pages/sign-up.html"><span class="link-text">Đăng ký</span>
                   </a>
                </li>
-               <li class="header__navbar-item header__navbar-item--strong"><a href="./pages/sign-in.html"><span
+               <li class="header__navbar-item header__navbar-item--strong"><a href="../pages/sign-in.html"><span
                         class="link-text">Đăng nhập</span>
                   </a>
                </li>
 
                <!-- <li class="header__navbar-item header__navbar-user">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHjPcNR8D64dBVY4MlK-SahdXGT2o0RfIg2S7VnpX7w&s" alt="" class="header__navbar-user-img">
-                        <span class="header__navbar-user-name">Hùng Lê</span>
-
-                        <ul class="header__navbar-user-menu">
-                            <li class="header__navbar-user-item">
-                                <a href="">Tài khoản của tôi</a>
-                            </li>
-                            <li class="header__navbar-user-item">
-                                <a href="">Địa chỉ của tôi</a>
-                            </li>
-                            <li class="header__navbar-user-item">
-                                <a href="">Đơn mua</a>
-                            </li>
-                            <li class="header__navbar-user-item .header__navbar-user-item--separate">
-                                <a href="">Đăng xuất</a>
-                            </li>
-                        </ul>
-                    </li> -->
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHjPcNR8D64dBVY4MlK-SahdXGT2o0RfIg2S7VnpX7w&s" alt="" class="header__navbar-user-img">
+                              <span class="header__navbar-user-name">Hùng Lê</span>
+      
+                              <ul class="header__navbar-user-menu">
+                                  <li class="header__navbar-user-item">
+                                      <a href="">Tài khoản của tôi</a>
+                                  </li>
+                                  <li class="header__navbar-user-item">
+                                      <a href="">Địa chỉ của tôi</a>
+                                  </li>
+                                  <li class="header__navbar-user-item">
+                                      <a href="">Đơn mua</a>
+                                  </li>
+                                  <li class="header__navbar-user-item .header__navbar-user-item--separate">
+                                      <a href="">Đăng xuất</a>
+                                  </li>
+                              </ul>
+                          </li> -->
             </ul>
          </nav>
 
          <!-- Header with search -->
          <div class="header-with-search">
             <div class="header__logo hide-on-tablet">
-               <a href="" class="header__logo-link">
-                  <img src="./assets/img/logo.png" alt="">
+               <a href="../index.html" class="header__logo-link">
+                  <img src="../assets/img/logo.png" alt="">
                </a>
             </div>
 
@@ -206,16 +185,16 @@
                      </div>
                      <!-- Search history -->
                      <!-- <div class="header__search-history">
-                        <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
-                        <ul class="header__search-history-list">
-                           <li class="header__search-history-item">
-                              <a href="">Giày nike</a>
-                           </li>
-                           <li class="header__search-history-item">
-                              <a href="">Giày airforce one</a>
-                           </li>
-                        </ul>
-                     </div> -->
+                              <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                              <ul class="header__search-history-list">
+                                 <li class="header__search-history-item">
+                                    <a href="">Giày nike</a>
+                                 </li>
+                                 <li class="header__search-history-item">
+                                    <a href="">Giày airforce one</a>
+                                 </li>
+                              </ul>
+                           </div> -->
                   </div>
 
 
@@ -225,11 +204,11 @@
                <!-- Cart layout -->
                <div class="header__cart">
                   <div class="header__cart-wrap ">
-                     <img src="./assets/img/icon-cart.svg" alt="" width="32px">
+                     <img src="../assets/img/icon-cart.svg" alt="" width="32px">
                      <span class="header__cart-notice ">6</span>
                      <!-- No cart: header__cart-list--no-cart -->
-                     <div class="header__cart-list" style="z-index: 5;">
-                        <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                     <div class="header__cart-list  ">
+                        <img src="../assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
                         <span class="header__cart-list-no-cart-msg">
                            Chưa có sản phẩm
                         </span>
@@ -238,12 +217,12 @@
                         <ul class="header__cart-list-item">
                            <!-- Cart item -->
                            <li class="header__cart-item">
-                              <img src="./assets/img/shoe/anhgiay6.jpg" alt="" class="header__cart-img">
+                              <img src="../assets/img/shoe/anhgiay6.jpg" alt="" class="header__cart-img">
                               <div class="header__cart-item-info">
                                  <div class="header__cart-item-head">
                                     <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool Team Wellness</h5>
                                     <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                               có thể đẩy ra xa nhau được  -->
+                                                     có thể đẩy ra xa nhau được  -->
                                     <div class="header__cart-item-price-wrap">
                                        <span class="header__cart-item-price">1.950.000đ</span>
                                        <span class="header__cart-item-multiply">x</span>
@@ -262,13 +241,13 @@
                            </li>
 
                            <li class="header__cart-item">
-                              <img src="./assets/img/shoe/anhgiay7.jpg" alt="" class="header__cart-img">
+                              <img src="../assets/img/shoe/anhgiay7.jpg" alt="" class="header__cart-img">
                               <div class="header__cart-item-info">
                                  <div class="header__cart-item-head">
                                     <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool Crystal Sidestripe
                                     </h5>
                                     <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                               có thể đẩy ra xa nhau được  -->
+                                                     có thể đẩy ra xa nhau được  -->
                                     <div class="header__cart-item-price-wrap">
                                        <span class="header__cart-item-price">1.950.000đ</span>
                                        <span class="header__cart-item-multiply">x</span>
@@ -287,12 +266,12 @@
                            </li>
 
                            <li class="header__cart-item">
-                              <img src="./assets/img/shoe/anhgiay8.jpg" alt="" class="header__cart-img">
+                              <img src="../assets/img/shoe/anhgiay8.jpg" alt="" class="header__cart-img">
                               <div class="header__cart-item-info">
                                  <div class="header__cart-item-head">
                                     <h5 class="header__cart-item-name">Giày Sneaker Vans UA Style 36 Vintage Pop</h5>
                                     <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                               có thể đẩy ra xa nhau được  -->
+                                                     có thể đẩy ra xa nhau được  -->
                                     <div class="header__cart-item-price-wrap">
                                        <span class="header__cart-item-price">1.950.000đ</span>
                                        <span class="header__cart-item-multiply">x</span>
@@ -311,13 +290,13 @@
                            </li>
 
                            <li class="header__cart-item">
-                              <img src="./assets/img/shoe/anhgiay9.jpg" alt="" class="header__cart-img">
+                              <img src="../assets/img/shoe/anhgiay9.jpg" alt="" class="header__cart-img">
                               <div class="header__cart-item-info">
                                  <div class="header__cart-item-head">
                                     <h5 class="header__cart-item-name">Giày Sneaker Vans Style 36 Moroccan Tile Check
                                        Phối Màu</h5>
                                     <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                               có thể đẩy ra xa nhau được  -->
+                                                     có thể đẩy ra xa nhau được  -->
                                     <div class="header__cart-item-price-wrap">
                                        <span class="header__cart-item-price">2.200.000đ</span>
                                        <span class="header__cart-item-multiply">x</span>
@@ -336,13 +315,13 @@
                            </li>
 
                            <li class="header__cart-item">
-                              <img src="./assets/img/shoe/anhgiay10.jpg" alt="" class="header__cart-img">
+                              <img src="../assets/img/shoe/anhgiay10.jpg" alt="" class="header__cart-img">
                               <div class="header__cart-item-info">
                                  <div class="header__cart-item-head">
                                     <h5 class="header__cart-item-name">Giày Sneaker Vans Classic New Varsity VN0A33TB43L
                                        Màu Xám</h5>
                                     <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                               có thể đẩy ra xa nhau được  -->
+                                                     có thể đẩy ra xa nhau được  -->
                                     <div class="header__cart-item-price-wrap">
                                        <span class="header__cart-item-price">1.690.000đ</span>
                                        <span class="header__cart-item-multiply">x</span>
@@ -361,13 +340,13 @@
                            </li>
 
                            <li class="header__cart-item">
-                              <img src="./assets/img/shoe/anhgiay11.jpg" alt="" class="header__cart-img">
+                              <img src="../assets/img/shoe/anhgiay11.jpg" alt="" class="header__cart-img">
                               <div class="header__cart-item-info">
                                  <div class="header__cart-item-head">
                                     <h5 class="header__cart-item-name">Giày Sneaker Vans Ua Old Skool 36 DX Spray Phối
                                        Màu Size 40</h5>
                                     <!-- Thêm class wrap để ôm 3 thẻ span để thuộc tích flex 
-                                               có thể đẩy ra xa nhau được  -->
+                                                     có thể đẩy ra xa nhau được  -->
                                     <div class="header__cart-item-price-wrap">
                                        <span class="header__cart-item-price">2.450.000đ</span>
                                        <span class="header__cart-item-multiply">x</span>
@@ -394,13 +373,12 @@
          </div>
 
          <div class="header__menu">
-            <a href="./pages/menu-detail-1.html" class="header__menu-item">ADIDAS</a>
-            <a href="./pages/menu-detail-2.html" class="header__menu-item">CONVERSE</a>
-            <a href="./pages/menu-detail-3.html" class="header__menu-item">LACOSTE</a>
-            <a href="./pages/menu-detail-4.html" class="header__menu-item">PUMA</a>
-            <a href="./pages/menu-detail-5.html" class="header__menu-item">MLB</a>
-            <a href="./pages/menu-detail-6.html" class="header__menu-item">NIKE</a>
-            <a href="./pages/product-list.html" class="header__menu-item">DANH SÁCH SẢN PHẨM</a>
+            <a href="../pages/menu-detail-1.html" class="header__menu-item">ADIDAS</a>
+            <a href="../pages/menu-detail-2.html" class="header__menu-item">CONVERSE</a>
+            <a href="../pages/menu-detail-3.html" class="header__menu-item">LACOSTE</a>
+            <a href="../pages/menu-detail-4.html" class="header__menu-item">PUMA</a>
+            <a href="../pages/menu-detail-5.html" class="header__menu-item">MLB</a>
+            <a href="../pages/menu-detail-6.html" class="header__menu-item">NIKE</a>
 
          </div>
       </div>
@@ -409,253 +387,46 @@
    </header>
 
    <!-- Body -->
-   <div class="body grid wide">
-      <!-- Banner -->
-      <div class="banner">
-         <div class="banner__left slider" id="banner-slick">
-            <img src="https://seotrends.com.vn/wp-content/uploads/2023/06/anh-sale-banner-sale-giay-dep.jpg" alt=""
-               width="815px" min-height="270px">
-            <img src="./assets/img/banner-1.jpg" alt="" width="815px" min-height="270px">
-            <img src="https://bizweb.dktcdn.net/100/438/408/themes/919724/assets/flash_sale_banner.jpg?1698222119318"
-               alt="" width="815px" min-height="270px">
-
-         </div>
-         <!-- <div class="banner__right">
-            <img src="./assets/img/banner-2.jpg" alt="" width="385px" min-height="130px">
-            <img src="./assets/img/banner-3.jpg" alt="" width="385px" min-height="136px">
-         </div> -->
+   <div class="wrapper-cart body grid">
+      <h1>DANH SÁCH SẢN PHẨM</h1>
+      <!-- Select -->
+      <div class="select" style="width:250px;">
+         <select onchange="handleChangeSelect(this)">
+            <option value="0">Chọn: </option>
+            <option value="1">Giá từ 1.000.000 - 1.500.000</option>
+            <option value="2">Giá từ 1.500.000 - 2.000.000</option>
+            <option value="3">Giá từ 2.000.000 - 2.500.000</option>
+            <option value="4">Giá từ 2.500.000 - 3.000.000</option>
+            <option value="5">Giá trên 3.000.000</option>
+         </select>
       </div>
 
-      <!-- Banner bottom -->
-      <!-- <div class="banner__bottom">
-         <img src="./assets/img/banner-4.jpg" alt="" height="110px">
-      </div> -->
+      <!-- Table -->
+      <table id="product-list">
+         <thead>
+            <tr>
+               <th><input type="checkbox" name="check-all" id="check-all"></th>
+               <th>Tên sản phẩm</th>
+               <th>Thương hiệu</th>
+               <th>Đơn giá</th>
+               <th>Số lượng</th>
+               <th>Thành tiền</th>
+            </tr>
+         </thead>
+         <tbody>
 
-      <!-- Best brand -->
-      <div class="best-brand-container">
-         <div class="brand__title">
-            <svg class="brand__icon" _ngcontent-vuahanghieu-app-c8="" viewBox="0 0 10.96 14.74"
-               xmlns="http://www.w3.org/2000/svg">
-               <defs _ngcontent-vuahanghieu-app-c8="">
-                  <style _ngcontent-vuahanghieu-app-c8="">
-                     .cls-1 {
-                        fill: #fdb515;
-                     }
-
-                     .cls-2 {
-                        fill: #231f20;
-                     }
-                  </style>
-               </defs>
-               <path _ngcontent-vuahanghieu-app-c8="" class="cls-1"
-                  d="M9.71.15,6.82,5.8a.11.11,0,0,0,.1.15h3.93a.11.11,0,0,1,.07.19L.18,14.71A.11.11,0,0,1,0,14.58L3.53,6.79a.11.11,0,0,0-.1-.15H.7a.11.11,0,0,1-.1-.16L3.91.06A.1.1,0,0,1,4,0H9.62A.1.1,0,0,1,9.71.15Z">
-               </path>
-               <path _ngcontent-vuahanghieu-app-c8="" class="cls-2" d="M2.69,8.64,0,14.6a.1.1,0,0,0,.15.12L7.79,8.64Z">
-               </path>
-            </svg>
-            <span style="margin-left: 5px;">GIÀY</span>
-            <strong style="margin-left: 5px;">BÁN CHẠY</strong>
-         </div>
-         <div class="brand__products row">
-            <a href="./pages/shoe-detail-1.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/shoe/giay-1.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày MLB Big Ball Chunky A New York Yankees 3ASHC101N-50BGL Màu Trắng Size 250
-               </div>
-               <div class="brand__product-item-price">
-                  <strong class="new-price">1.250.000 đ</strong>
-                  <span class="sale-price">1.375.000 đ</span>
-               </div>
-            </a>
-
-            <a href="./pages/shoe-detail-2.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/shoe/giay-2.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Thể Thao Nữ Adidas × Gucci Women’s Gazelle IE4796 Màu Nâu Be
-               </div>
-               <div class="brand__product-item-price">
-                  <strong class="new-price">28.900.000 đ</strong>
-                  <span class="sale-price">31.500.000 đ</span>
-               </div>
-            </a>
-            <a href="./pages/shoe-detail-3.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/shoe/giay-3.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Thể Thao Nike Travis Scott X Air Jordan 1 Low OG Reverse Mocha Phối Màu
-               </div>
-               <div class="brand__product-item-price">
-                  <strong class="new-price">38.800.000 đ</strong>
-                  <span class="sale-price">40.050.000 đ</span>
-               </div>
-            </a>
-            <a href="./pages/shoe-detail-4.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/shoe/giay-4.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Sneaker Nam Converse X Off CO6571 Màu Trắng Size 39
-               </div>
-               <div class="brand__product-item-price">
-                  <strong class="new-price">8.510.000 đ</strong>
-                  <span class="sale-price">9.900.000 đ</span>
-               </div>
-            </a>
-            <a href="./pages/shoe-detail-5.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/shoe/giay-5.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Thể Thao Nam Louis Vuitton LV Trainer 1A9JG9 Màu Đen Trắng
-               </div>
-               <div class="brand__product-item-price">
-                  <strong class="new-price">48.900.000 đ</strong>
-                  <span class="sale-price">54.000.000 đ</span>
-               </div>
-            </a>
-         </div>
-      </div>
-
-      <hr>
-
-      <!-- Giày mới -->
-      <div class="best-brand-container">
-         <div class="brand__title">
-            <svg class="brand__icon" _ngcontent-vuahanghieu-app-c8="" viewBox="0 0 10.96 14.74"
-               xmlns="http://www.w3.org/2000/svg">
-               <defs _ngcontent-vuahanghieu-app-c8="">
-                  <style _ngcontent-vuahanghieu-app-c8="">
-                     .cls-1 {
-                        fill: #fdb515;
-                     }
-
-                     .cls-2 {
-                        fill: #231f20;
-                     }
-                  </style>
-               </defs>
-               <path _ngcontent-vuahanghieu-app-c8="" class="cls-1"
-                  d="M9.71.15,6.82,5.8a.11.11,0,0,0,.1.15h3.93a.11.11,0,0,1,.07.19L.18,14.71A.11.11,0,0,1,0,14.58L3.53,6.79a.11.11,0,0,0-.1-.15H.7a.11.11,0,0,1-.1-.16L3.91.06A.1.1,0,0,1,4,0H9.62A.1.1,0,0,1,9.71.15Z">
-               </path>
-               <path _ngcontent-vuahanghieu-app-c8="" class="cls-2" d="M2.69,8.64,0,14.6a.1.1,0,0,0,.15.12L7.79,8.64Z">
-               </path>
-            </svg>
-            <span style="margin-left: 5px;">GIÀY</span>
-            <strong style="margin-left: 5px;">MỚI</strong>
-         </div>
-         <div class="brand__products row">
-            <a href="./pages/shoe-detail-6.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/Nike/anhgiay-6.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Thể Thao Nike Air Force 1 ’07 ‘White Black’ CT2302-100 Màu Trắng Đen Size 40.5
-               </div>
-
-               <div class="brand__product-item-price">
-                  <strong class="new-price">2.550.000 đ</strong>
-                  <span class="sale-price">2.900.000 đ</span>
-               </div>
-            </a>
-
-            <a href="./pages/shoe-detail-7.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/Nike/anhgiay-7.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Thể Thao Nike Court Vision Next Nature Black DH2987-001 Màu Đen Trắng Size 40
-               </div>
-
-               <div class="brand__product-item-price">
-                  <strong class="new-price">2.800.000 đ</strong>
-                  <span class="sale-price">3.200.000 đ</span>
-               </div>
-            </a>
-            <a href="./pages/shoe-detail-8.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/Nike/anhgiay-8.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Thể Thao Nike Revolution 6 Next Nature DC3728-005 Màu Đen Size 43
-               </div>
-
-               <div class="brand__product-item-price">
-                  <strong class="new-price">2.790.000 đ</strong>
-                  <span class="sale-price">3.300.000 đ</span>
-               </div>
-            </a>
-            <a href="./pages/shoe-detail-9.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/Nike/anhgiay-9.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Thể Thao Nike Air Jordan 1 High OG UNC University Blue 555088-134 575441-134 Màu Xanh Trắng Size
-                  41
-               </div>
-
-               <div class="brand__product-item-price">
-                  <strong class="new-price">2.400.000 đ</strong>
-                  <span class="sale-price">2.980.000 đ</span>
-               </div>
-            </a>
-            <a href="./pages/shoe-detail-10.html" class="brand__product-item grid__column-2-4">
-               <img src="./assets/img/Nike/anhgiay-10.jpg" alt="" width="100%" height="200" />
-               <div class="brand__product-item-title text-wrap">
-                  Giày Bóng Rổ Nike KYRIE FLYTRAP III EP Black/White CD0191-001 Màu Đen Size 44.5
-               </div>
-
-               <div class="brand__product-item-price">
-                  <strong class="new-price">2.850.000 đ</strong>
-                  <span class="sale-price">3.350.000 đ</span>
-               </div>
-            </a>
-         </div>
-      </div>
-
-      <hr>
-
-
-
-      <!-- Banner -->
-      <!-- <div class="banner">
-         <img src="./assets/img/banner-5.jpg" alt="" width="597" height="225" style="margin-right: 5px;">
-         <img src="./assets/img/banner-6.jpg" alt="" width="597" height="225">
-      </div> -->
-
-      <!-- Brand -->
-      <div class="brands">
-         <div class="brand__title">
-            <span><img src="https://cdn-icons-png.flaticon.com/512/5309/5309779.png" alt="" width="20"> CÁC THƯƠNG HIỆU
-            </span>
-            <strong style="margin-left: 5px;">NỔI TIẾNG</strong>
-         </div>
-         <div class="brand__container row">
-            <div class="brand-item col l-2">
-               <a href="./pages/menu-detail-1.html">
-                  <img src="./assets/img/brands/adidas.jpg" alt="" width="130">
-               </a>
-            </div>
-            <div class="brand-item col l-2">
-               <a href="./pages/menu-detail-2.html">
-                  <img src="./assets/img/brands/converse.png" alt="" width="130">
-               </a>
-            </div>
-            <div class="brand-item col l-2">
-               <a href="./pages/menu-detail-3.html">
-                  <img src="./assets/img/brands/lacoste.png" alt="" width="130">
-               </a>
-            </div>
-            <div class="brand-item col l-2">
-               <a href="./pages/menu-detail-4.html">
-                  <img src="./assets/img/brands/puma.jpg" alt="" width="130">
-               </a>
-            </div>
-            <div class="brand-item col l-2">
-               <a href="./pages/menu-detail-5.html">
-                  <img src="./assets/img/brands/mlb.jpg" alt="" width="130">
-               </a>
-            </div>
-            <div class="brand-item col l-2">
-               <a href="./pages/menu-detail-6.html">
-                  <img src="./assets/img/brands/nike.jpg" alt="" width="130">
-               </a>
-            </div>
-         </div>
-      </div>
-
-
-      <!-- Underline -->
-      <div class="underline"></div>
+         </tbody>
+         <tr>
+            <td colspan="5"><strong>TỔNG TIỀN</strong></td>
+            <td><strong id="total-price"></strong></td>
+         </tr>
+      </table>
+      <h1 id="message"></h1>
    </div>
 
 
+
+   <div class="underline"></div>
 
    <!-- Footer -->
    <footer class="footer">
@@ -668,32 +439,32 @@
                </div>
                <ul class="footer-list">
                   <li class="footer-item">
-                     <a href="./pages/about.html" class="footer-item__link">
+                     <a href="../pages/about.html" class="footer-item__link">
                         Giới thiệu về DH Store Việt Nam
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Quy chế hoạt động
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Hợp tác với DH Store
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Chương trình Affiliate - Cộng tác viên
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Phụ trách nội dung
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Liên hệ
                      </a>
                      <div>
@@ -724,37 +495,37 @@
                </div>
                <ul class="footer-list">
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Hướng dẫn cách tra cứu mã đơn hàng mua trên DH Store
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Sản phẩm cần đổi hết hàng?
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Nếu không có hóa đơn mua hàng tôi có thể trả lại sản phẩm không?
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Tôi có thể trả lại sản phẩm vì không ưng ý?
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Đơn hàng nhận được bị thiếu so với đơn hàng đã đặt
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Sản phẩm nhận được không giống với hình ảnh trên website?
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Vì sao tôi nhận được thông báo đơn hàng đã hủy do hết hàng?
                      </a>
                   </li>
@@ -767,72 +538,72 @@
                </div>
                <ul class="footer-list">
                   <li class="footer-item">
-                     <a href="./pages/sales-policy.html" class="footer-item__link">
+                     <a href="../pages/sales-policy.html" class="footer-item__link">
                         Chính sách bán hàng
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Chính sách bảo hành
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Chính sách giao hàng
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Chính sách đổi trả và hoàn tiền
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Chính sách thanh toán
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Chính sách bảo mật thanh toán
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Chính sách quyền riêng tư
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Điều kiện và điều khoản giao dịch
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Cơ chế giải quyết tranh chấp
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Dịch vụ giao hàng siêu tốc 2H
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Hướng dẫn đăng ký thành viên
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Quyền lợi thành viên
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Hướng dẫn mua hàng trả góp
                      </a>
                   </li>
                   <li class="footer-item">
-                     <a href="./pages/warranty-policy.html" class="footer-item__link">
+                     <a href="../pages/warranty-policy.html" class="footer-item__link">
                         Báo cáo vi phạm (Reporting infringements)
                      </a>
                   </li>
@@ -913,92 +684,7 @@
 
    </footer>
 
-
-   <!-- Modal layout -->
-   <div class="modal">
-      <div class="modal__overlay">
-
-      </div>
-
-      <div class="modal__body">
-         <!-- Register form -->
-         <div class="auth-form">
-            <div class="auth-form__container">
-               <div class="auth-form__header">
-                  <h3 class="auth-form__heading">Đăng ký</h3>
-                  <span class="auth-form__switch-btn">Đăng nhập</span>
-               </div>
-
-               <div class="auth-form__form">
-                  <div class="auth-form__group">
-                     <input type="text" class="auth-form__input" placeholder="Nhập email của bạn">
-                  </div>
-                  <div class="auth-form__group">
-                     <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
-                  </div>
-                  <div class="auth-form__group">
-                     <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
-                  </div>
-               </div>
-
-               <div class="auth-form__aside">
-                  <p class="auth-form__policy-text">
-                     Bằng việc đăng kí, bạn đã đồng với F8-SHOP về
-                     <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                     <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
-                  </p>
-               </div>
-
-
-               <div class="auth-form__controls">
-                  <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
-                  <button class="btn btn--primary">ĐĂNG KÝ</button>
-               </div>
-            </div>
-
-            <div class="auth-form__socials">
-               <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                  <i class="auth-form__socials-icon ti-facebook"></i>
-                  <span class="auth-form__socials-title">
-                     Kết nối với Facebook
-                  </span>
-               </a>
-
-               <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                  <i class="auth-form__socials-icon ti-google"></i>
-                  <span class="auth-form__socials-title">
-                     Kết nối với Google
-                  </span>
-               </a>
-            </div>
-         </div>
-
-      </div>
-   </div>
-   </div>
-
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-   <script>
-      document.addEventListener("DOMContentLoaded", function () {
-         $('#banner-slick').slick();
-      });
-   </script>
-
-   <script>
-      document.addEventListener("DOMContentLoaded", function () {
-         $('#banner-slick').slick({
-            autoplay: true,
-            autoplaySpeed: 3000, // Thời gian tự động chuyển slide (3 giây)
-            slidesToShow: 1, // Số lượng hiển thị slide cùng lúc
-            slidesToScroll: 1, // Số lượng slide di chuyển khi nhấn nút Next/Prev
-            infinite: true, // Vòng lặp vô hạn
-            arrows: true,
-         });
-      });
-   </script>
-
+   <script src="../assets/js/product-list.js"></script>
 </body>
 
 </html>

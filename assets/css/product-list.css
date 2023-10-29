@@ -1,0 +1,88 @@
+.wrapper-cart {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 24px auto !important;
+	padding: 24px;
+	border-radius: 12px;
+	width: 90%;
+	min-height: 200px;
+	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.164); */
+}
+
+/* CSS cho phần tử gốc */
+.select {
+	width: 250px;
+	position: relative;
+	display: inline-block;
+	background: #f4f4f4;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-top: 24px;
+}
+
+/* CSS cho phần tử <select> */
+.select select {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	outline: none;
+}
+
+/* CSS cho mũi tên */
+.select:after {
+	content: "\25BC";
+	position: absolute;
+	top: 0;
+	right: 10px;
+	padding: 10px;
+	pointer-events: none;
+}
+
+/* Custom Table */
+#product-list {
+	display: none;
+	font-family: "Roboto", sans-serif;
+	border-collapse: collapse;
+	/* width: 100%; */
+	min-width: 1000px;
+	margin-top: 50px;
+	border-radius: 12px;
+	font-size: 16px;
+}
+
+#product-list td,
+#product-list th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#product-list tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#product-list tr:hover {
+	background-color: #4286f444;
+}
+
+#product-list th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: var(--color-primary);
+	color: white;
+}
+
+input[type="number"] {
+	outline: 0;
+	border: 0;
+	text-align: center;
+	width: 100px;
+	font-size: 16px;
+}
