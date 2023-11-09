@@ -30,6 +30,10 @@
         background-color: yellow;
       }
 
+      .form-field.invalid  .form-control{
+        border-color: rgb(203, 203, 48);
+        background-color: yellow;
+      }
 
       .form-message {
         color: #f33a58;
@@ -39,9 +43,9 @@
       /* .form-field.invalid .form-input {
          border-color: yellow;
       } */
-      .form-input:hover {
+      /* .form-input:hover {
          border-color: #1dbfaf;
-      }
+      } */
 
       
 
@@ -69,7 +73,7 @@
               <label for="user" class="form-label">Tên tài khoản</label>
               <span class="form-message"></span>
             </div>
-            <!-- <div class="form-field ">
+            <div class="form-field ">
               <input
                 id="pass"
                 name="pass"
@@ -90,7 +94,7 @@
               />
               <label for="pass2" class="form-label">Nhập lại mật khẩu</label>
               <span class="form-message"></span>
-            </div> -->
+            </div>
 
             
             <div class="form-field ">
@@ -115,18 +119,18 @@
               <label for="phonenumber" class="form-label">Số điện thoại</label>
               <span class="form-message"></span>
             </div>
-            <div class="form-group ">
+            <div class="form-field ">
               <label for="gender">Giới tính</label>
-              <div class="border" id="gender">
+              <div class="border form-control" id="gender">
                 <input   type="radio" name="gender" value="male"  > Nam
                 <input   type="radio" name="gender" value="female"> Nữ
                 
               </div>
               <span class="form-message" ></span>
             </div>
-            <div class="form-group ">
+            <div class="form-field ">
               <label for="hobbies">Sở thích</label>
-              <div class="border " id="hobbies">
+              <div class="border form-control" id="hobbies" >
                 <input type="checkbox" name="hobbies[]" value="du-lich" > Du lịch
                 <input type="checkbox" name="hobbies[]"  value="am-nhac" > Âm nhạc
                 <input type="checkbox" name="hobbies[]"  value="am-thuc" > Ẩm thực
@@ -136,7 +140,7 @@
               </div>
               <span class="form-message" ></span>
             </div>
-            <div class="form-group ">
+            <div class="form-field ">
               <label for="nationality">Quốc tịch</label>
               <select name="nationality" id="nationality" class="form-control" >
                 <option  value="">Chọn quốc tịch</option>
@@ -149,7 +153,7 @@
               </select>
               <span class="form-message"></span>
             </div>
-            <div class="form-group">
+            <div class="form-field">
               <label for="note">Ghi chú</label>
               <textarea name="note" id="note" class="form-control"></textarea>
               <span class="form-message" ></span>
@@ -167,7 +171,7 @@
              </div> -->
             
 
-            <button onclick="" class="btn btn-submit" id="register-btn">ĐĂNG KÝ</button>
+            <button  class="btn btn-submit" id="register-btn">ĐĂNG KÝ</button>
           </form>
 
           <div class="login_link-register">
@@ -275,6 +279,10 @@
             Validator.minLength("#pass", 6),
 
             Validator.isRequired("#pass2"),
+            Validator.isRequired('input[name="gender"]', "Vui lòng chọn giới tính"),
+              Validator.isRequired('input[name="hobbies[]"]', "Vui lòng chọn sở thích"),
+              Validator.isRequired("#nationality", "Vui lòng chọn quốc tịch"),
+              Validator.maxLength('#note', 200),
             Validator.isConfirmed(
               "#pass2",
               function () {
@@ -289,37 +297,27 @@
           },
         });
 
-        Validator({
-          form:'#form-1',
-          formGroupSelector: '.form-group',
-          errorSelector: '.form-message',
-            rules: [
-            
-              Validator.isRequired('input[name="gender"]', "Vui lòng chọn giới tính"),
-              Validator.isRequired('input[name="hobbies[]"]', "Vui lòng chọn sở thích"),
-              Validator.isRequired("#nationality", "Vui lòng chọn quốc tịch"),
-              Validator.maxLength('#note', 200)
-            ],
-            onSubmit: function (data) {
-              // Call API
-              console.log(data);
-            }
-        });
-
-        //   Validator({
-        //     form: '#form-2',
-        //     formGroupSelector: '.form-group',
-        //     errorSelector: '.form-message',
+        // Validator({
+        //   form:'#form-1',
+        //   formGroupSelector: '.form-group',
+        //   errorSelector: '.form-message',
         //     rules: [
-        //       Validator.isEmail('#email'),
-        //       Validator.minLength('#password', 6),
+            
+        //       Validator.isRequired('input[name="gender"]', "Vui lòng chọn giới tính"),
+        //       Validator.isRequired('input[name="hobbies[]"]', "Vui lòng chọn sở thích"),
+        //       Validator.isRequired("#nationality", "Vui lòng chọn quốc tịch"),
+        //       Validator.maxLength('#note', 200)
         //     ],
         //     onSubmit: function (data) {
         //       // Call API
         //       console.log(data);
         //     }
-        //   });
+        // });
+
+        
       });
+
+      
     </script>
   </body>
 </html>
