@@ -273,10 +273,13 @@
           
           errorSelector: ".form-message",
           rules: [
+            Validator.minLength("#user", 8),
             Validator.isRequired("#user", "Vui lòng nhập tên tài khoản"),
             Validator.isEmail("#email"),
             Validator.isPhoneNumber("#phonenumber"),
-            Validator.minLength("#pass", 6),
+            Validator.minLength("#pass", 8),
+            Validator.isPassword("#pass"),
+            
 
             Validator.isRequired("#pass2"),
             Validator.isRequired('input[name="gender"]', "Vui lòng chọn giới tính"),

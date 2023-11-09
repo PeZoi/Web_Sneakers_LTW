@@ -167,6 +167,16 @@ Validator.isPhoneNumber = function (selector, message) {
     };
 }
 
+Validator.isPassword = function (selector, message) {
+    return {
+        selector: selector,
+        test: function (value) {
+            var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+            return regex.test(value) ? undefined :  message || 'Vui lòng nhập đúng chuẩn mật khẩu';
+        }
+    };
+}
+
 Validator.minLength = function (selector, min, message) {
     return {
         selector: selector,
