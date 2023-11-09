@@ -172,7 +172,7 @@ Validator.isPassword = function (selector, message) {
         selector: selector,
         test: function (value) {
             var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-            return regex.test(value) ? undefined :  message || 'Vui lòng nhập đúng chuẩn mật khẩu';
+            return regex.test(value) ? undefined :  message || 'Mật khẩu phải chứa ít nhất 1 chữ thường, một chữ hoa, một chữ số và 1 kí tự đặc biệt';
         }
     };
 }
