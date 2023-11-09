@@ -11,6 +11,32 @@
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>Document</title>
+
+   <style>
+      .form-field.invalid  .form-input{
+        border-color: rgb(203, 203, 48);
+        background-color: yellow;
+      }
+
+      
+
+
+      .form-message {
+        color: #f33a58;
+      }
+
+
+      /* .form-field.invalid .form-input {
+         border-color: yellow;
+      } */
+      .form-input:hover {
+         border-color: #1dbfaf;
+      }
+
+      
+
+
+    </style>
 </head>
 
 <body>
@@ -21,14 +47,16 @@
          <div class="login-form">
             <h1>Đăng nhập</h1>
 
-            <form action="">
+            <form action="" class="form" id="form-2">
                <div class="form-field">
-                  <input class="form-input" type="text" placeholder=" ">
+                  <input id="user" class="form-input" type="text" placeholder=" ">
                   <label class="form-label">Tên tài khoản</label>
+                  <span class="form-message"></span>
                </div>
                <div class="form-field">
-                  <input class="form-input" type="password" placeholder=" ">
+                  <input id="password" class="form-input" type="password" placeholder=" ">
                   <label class="form-label">Mật khẩu</label>
+                  <span class="form-message"></span>
                </div>
                <button class="btn btn-submit">ĐĂNG NHẬP</button>
             </form>
@@ -60,6 +88,27 @@
       </div>
 
    </div>
+
+      <script src="../assets/js/validator.js"></script>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            Validator({
+            form: '#form-2',
+            formGroupSelector: '.form-field',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#user', "Vui lòng nhập tên tài khoản"),
+              Validator.minLength('#password', 6),
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+         });
+      </script>
+   
 </body>
 
 </html>

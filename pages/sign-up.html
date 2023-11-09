@@ -1,53 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../assets/css/base.css">
-   <link rel="stylesheet" href="../assets/css/grid.css">
-   <link rel="stylesheet" href="../assets/css/sign-in.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <link rel="stylesheet" href="../assets/css/sign-in.css" />
+    <link rel="stylesheet" href="../assets/css/validate.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <title>Document</title>
-</head>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .form-field.invalid  .form-input{
+        border-color: rgb(203, 203, 48);
+        background-color: yellow;
+      }
 
-<body>
-   <div class="wrapper">
-      <div class="container__banner">
-      </div>
+      .form-group.invalid  {
+        border-color: rgb(203, 203, 48);
+        background-color: yellow;
+      }
+
+      .form-group.invalid  .form-control{
+        border-color: rgb(203, 203, 48);
+        background-color: yellow;
+      }
+
+
+      .form-message {
+        color: #f33a58;
+      }
+
+
+      /* .form-field.invalid .form-input {
+         border-color: yellow;
+      } */
+      .form-input:hover {
+         border-color: #1dbfaf;
+      }
+
+      
+
+
+    </style>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container__banner"></div>
       <div class="container__login">
-         <div class="login-form">
-            <h1>Đăng ký</h1>
+        <div class="login-form">
+          <h1>Đăng ký</h1>
 
-            <form action="">
-               <div class="form-field">
-                  <input class="form-input" type="text" placeholder=" ">
-                  <label class="form-label">Tên tài khoản</label>
-               </div>
-               <div class="form-field">
-                  <input class="form-input" type="password" placeholder=" ">
-                  <label class="form-label">Mật khẩu</label>
-               </div>
-               <div class="form-field">
-                  <input class="form-input" type="password" placeholder=" ">
-                  <label class="form-label">Nhập lại mật khẩu</label>
-               </div>
-               <div class="form-field">
-                  <input class="form-input" type="text" placeholder=" ">
-                  <label class="form-label">Email</label>
-               </div>
-               <button class="btn btn-submit">ĐĂNG KÝ</button>
-            </form>
-
-            <div class="login_link-register">
-               <span>Bạn đã có tài khoản? <a href="./sign-in.html">Đăng nhập</a></span>
+          <form action="" class="form" id="form-1">
+            <div class="form-field ">
+              <input
+                id="user"
+                name="user"
+                class="form-input"
+                type="text"
+                placeholder=" "
+              />
+              <label for="user" class="form-label">Tên tài khoản</label>
+              <span class="form-message"></span>
             </div>
-         </div>
+            <!-- <div class="form-field ">
+              <input
+                id="pass"
+                name="pass"
+                class="form-input"
+                type="password"
+                placeholder=" "
+              />
+              <label for="pass" class="form-label">Mật khẩu</label>
+              <span class="form-message"></span>
+            </div>
+            <div class="form-field ">
+              <input
+                id="pass2"
+                name="pass2"
+                class="form-input"
+                type="password"
+                placeholder=" "
+              />
+              <label for="pass2" class="form-label">Nhập lại mật khẩu</label>
+              <span class="form-message"></span>
+            </div> -->
+
+            
+            <div class="form-field ">
+              <input
+                id="email"
+                name="email"
+                class="form-input"
+                type="text"
+                placeholder=" "
+              />
+              <label for="email" class="form-label">Email</label>
+              <span class="form-message"></span>
+            </div>
+            <div class="form-field ">
+              <input
+                id="phonenumber"
+                name="phonenumber"
+                class="form-input"
+                type="text"
+                placeholder=" "
+              />
+              <label for="phonenumber" class="form-label">Số điện thoại</label>
+              <span class="form-message"></span>
+            </div>
+            <div class="form-group ">
+              <label for="gender">Giới tính</label>
+              <div class="border" id="gender">
+                <input   type="radio" name="gender" value="male"  > Nam
+                <input   type="radio" name="gender" value="female"> Nữ
+                
+              </div>
+              <span class="form-message" ></span>
+            </div>
+            <div class="form-group ">
+              <label for="hobbies">Sở thích</label>
+              <div class="border " id="hobbies">
+                <input type="checkbox" name="hobbies[]" value="du-lich" > Du lịch
+                <input type="checkbox" name="hobbies[]"  value="am-nhac" > Âm nhạc
+                <input type="checkbox" name="hobbies[]"  value="am-thuc" > Ẩm thực
+                <input type="checkbox" name="hobbies[]"  value="doc-sach" > Đọc sách
+                <input type="checkbox" name="hobbies[]"  value="khac" > Khác
+                
+              </div>
+              <span class="form-message" ></span>
+            </div>
+            <div class="form-group ">
+              <label for="nationality">Quốc tịch</label>
+              <select name="nationality" id="nationality" class="form-control" >
+                <option  value="">Chọn quốc tịch</option>
+                <option  value="viet-nam">Việt Nam</option>
+                <option  value="mỹ">Mỹ</option>
+                <option  value="anh">Anh</option>
+                <option  value="pháp">Pháp</option>
+                <option  value="nhật">Nhật Bản</option>
+                <option  value="trung-quoc">Trung Quốc</option>
+              </select>
+              <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="note">Ghi chú</label>
+              <textarea name="note" id="note" class="form-control"></textarea>
+              <span class="form-message" ></span>
+            </div>
+            <!-- <div class="form-field">
+               <input
+                 id="fullname"
+                 name="fullname"
+                 class="form-input"
+                 type="text"
+                 placeholder=" "
+               />
+               <label for="fullname" class="form-label">Tên đầy đủ</label>
+               <span class="form-message"></span>
+             </div> -->
+            
+
+            <button onclick="" class="btn btn-submit" id="register-btn">ĐĂNG KÝ</button>
+          </form>
+
+          <div class="login_link-register">
+            <span
+              >Bạn đã có tài khoản? <a href="./sign-in.html">Đăng nhập</a></span
+            >
+          </div>
+        </div>
       </div>
+    </div>
 
-   </div>
-</body>
+    <script src="../assets/js/validator.js"></script>
 
+    <script>
+      //check gender
+      // document.getElementById("register-btn").addEventListener("click", function() {
+        
+      //   var gender = document.getElementsByClassName("gender");
+        
+      //   var genderFlag = 0;
+      //   for(var i=0; i<gender.length; i++){
+          
+      //     if(gender[i].checked == true) {
+      //       genderFlag++;
+      //     }
+  
+      //     if(genderFlag == 0) {
+            
+      //       document.getElementById("gender-container").style.backgroundColor = 'yellow';
+      //       document.getElementById("gender-message").innerText = 'Vui lòng chọn giới tính';
+      //     }
+      //   }
+      // });
+
+      //check hobbies
+      // document.getElementById("register-btn").addEventListener("click", function() {
+        
+      //   var hobbies = document.getElementsByClassName("hobbies");
+        
+      //   var hobbiesFlag = 0;
+      //   for(var i=0; i<hobbies.length; i++){
+          
+      //     if(hobbies[i].checked == true) {
+      //       hobbiesFlag++;
+      //     }
+  
+      //     if(hobbiesFlag == 0) {
+            
+      //       document.getElementById("hobbies-container").style.backgroundColor = 'yellow';
+      //       document.getElementById("hobbies-message").innerText = 'Vui lòng chọn sở thích';
+      //     }
+      //   }
+
+
+        
+
+
+      //Check nationality
+
+
+      // function nationalityChanged(obj) {
+      //   var nationality = document.getElementsById("nationality");
+      //   if(obj.value == "") {
+      //     nationality.style.backgroundColor = 'yellow';
+      //     document.getElementById("nationality-message").innerText = 'Vui lòng chọn quốc tịch';
+      //   }
+      // }
+
+      
+
+      // document.getElementById("register-btn").addEventListener("click", function() {
+      //   var nationality = document.getElementsById("nationality");
+        // var nationalityOptions = nationality.options[nationality.selectedIndex];
+        
+        
+        // if(nationalityOptions.value == " ") {
+          
+        //   // document.getElementById("nationality").style.backgroundColor = 'yellow';
+        //   nationality.style.backgroundColor = 'yellow';
+        //   document.getElementById("nationality-message").innerText = 'Vui lòng chọn quốc tịch';
+        // }
+
+      //   for(var i=0;i < nationality.length;i++) {
+      //     console.log(nationality[i]);
+      //     if(nationality[i].value == "") {
+      //       document.getElementById("nationality").style.backgroundColor = 'yellow';
+      //       document.getElementById("nationality-message").innerText = 'Vui lòng chọn quốc tịch';
+      //     }
+      //   }
+      // });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mong muốn của chúng ta
+        Validator({
+          form: "#form-1",
+          formGroupSelector: ".form-field",
+          
+          errorSelector: ".form-message",
+          rules: [
+            Validator.isRequired("#user", "Vui lòng nhập tên tài khoản"),
+            Validator.isEmail("#email"),
+            Validator.isPhoneNumber("#phonenumber"),
+            Validator.minLength("#pass", 6),
+
+            Validator.isRequired("#pass2"),
+            Validator.isConfirmed(
+              "#pass2",
+              function () {
+                return document.querySelector("#form-1 #pass").value;
+              },
+              "Mật khẩu nhập lại không chính xác"
+            ),
+          ],
+          onSubmit: function (data) {
+            // Call API
+            console.log(data);
+          },
+        });
+
+        Validator({
+          form:'#form-1',
+          formGroupSelector: '.form-group',
+          errorSelector: '.form-message',
+            rules: [
+            
+              Validator.isRequired('input[name="gender"]', "Vui lòng chọn giới tính"),
+              Validator.isRequired('input[name="hobbies[]"]', "Vui lòng chọn sở thích"),
+              Validator.isRequired("#nationality", "Vui lòng chọn quốc tịch"),
+              Validator.maxLength('#note', 200)
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+        });
+
+        //   Validator({
+        //     form: '#form-2',
+        //     formGroupSelector: '.form-group',
+        //     errorSelector: '.form-message',
+        //     rules: [
+        //       Validator.isEmail('#email'),
+        //       Validator.minLength('#password', 6),
+        //     ],
+        //     onSubmit: function (data) {
+        //       // Call API
+        //       console.log(data);
+        //     }
+        //   });
+      });
+    </script>
+  </body>
 </html>
