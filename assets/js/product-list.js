@@ -82,7 +82,7 @@ const products = [
 	},
 ];
 
-// letiables
+// variable global
 let table = document.getElementById("product-list");
 let tbody = table.getElementsByTagName("tbody")[0];
 
@@ -102,8 +102,6 @@ function render(products) {
   				<span class="close">&times;</span>
   				<img class="modal-content" id="img01-${product.id}">
 			</div></td>
-			
-
             <td><a href=${product.url}>${product.name}</a></td>
             <td>${product.brand}</td>
             <td>${product.price.toLocaleString("vi-en")}</td>
