@@ -194,7 +194,7 @@ Validator.isPassword = function (selector, message) {
 			return regex.test(value)
 				? undefined
 				: message ||
-						"Mật khẩu phải tối thiểu 8 ký tự và chứa chữ thường, chữ hoa và ký tự đặc biệt";
+						"Mật khẩu phải tối thiểu 8 ký tự và chứa chữ thường, chữ số, chữ hoa và ký tự đặc biệt";
 		},
 	};
 };

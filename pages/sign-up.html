@@ -164,8 +164,9 @@
 
         errorSelector: ".form-message",
         rules: [
+        Validator.isRequired("#user", "Vui lòng nhập tên tài khoản"),
           Validator.minLength("#user", 8),
-          Validator.isRequired("#user", "Vui lòng nhập tên tài khoản"),
+          // Validator.isRequired("#user", "Vui lòng nhập tên tài khoản"),
           Validator.isEmail("#email"),
           Validator.isPhoneNumber("#phonenumber"),
           Validator.isPassword("#pass"),

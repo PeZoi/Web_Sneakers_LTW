@@ -98,8 +98,11 @@
             formGroupSelector: '.form-field',
             errorSelector: '.form-message',
             rules: [
+               // Validator.minLength("#user", 8),
               Validator.isRequired('#user', "Vui lòng nhập tên tài khoản"),
-              Validator.minLength('#password', 6),
+              Validator.minLength("#user", 8),
+              Validator.isRequired('#password', "Vui lòng nhập mật khẩu"),
+              Validator.minLength('#password', 8),
             ],
             onSubmit: function (data) {
               // Call API
