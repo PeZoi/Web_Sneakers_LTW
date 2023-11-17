@@ -389,6 +389,15 @@
    <!-- Body -->
    <div class="wrapper-cart body grid">
       <h1>DANH SÁCH SẢN PHẨM</h1>
+
+      <div class="form-field d-flex-center" style="margin-top: 12px; width: 100%;">
+         <input type="text" class="form-input" name="search" id="search" placeholder=" ">
+         <label for="user" class="form-label">Tìm kiếm tên giày</label>
+         <button type="button" class="btn btn-submit" onclick="handleSearch()"
+            style="min-width: 80px; width: 0; ; margin-left: 30px;"><img src="../assets/img/icon-search-white.svg"
+               alt=""></button>
+      </div>
+
       <!-- Select -->
       <div class="select" style="width:250px;">
          <select onchange="handleChangeSelect(this)">
@@ -400,8 +409,14 @@
             <option value="5">Giá trên 3.000.000</option>
             <option value="6">Giá tăng dần</option>
             <option value="7">Giá giảm dần</option>
+            <option value="8">NIKE</option>
+            <option value="9">LOUIS VUITTON</option>
+            <option value="10">ADIDAS</option>
+            <option value="11">CONVERSE</option>
          </select>
       </div>
+
+
 
       <!-- Table -->
       <table id="product-list">

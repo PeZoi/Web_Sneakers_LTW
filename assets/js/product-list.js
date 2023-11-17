@@ -95,7 +95,7 @@ function render(products) {
             <td><input type="checkbox" name="check-item" id="r-${
 					product.id
 				}"></td>
-			<td><img data-id="${product.id}" class="product-image" src="${
+				<td><img data-id="${product.id}" class="product-image" src="${
 			product.img
 		}" alt="${product.name}" width="100">
 		<div id="myModal-${product.id}" class="modal">
@@ -214,8 +214,61 @@ function handleChangeSelect(selectElement) {
 		newProducts = products.sort((p1, p2) => p1.price - p2.price);
 	} else if (selectedValue === "7") {
 		newProducts = products.sort((p1, p2) => p2.price - p1.price);
+	} else if (selectedValue === "8") {
+		newProducts = products.filter((p) => p.brand === "NIKE");
+	} else if (selectedValue === "9") {
+		newProducts = products.filter((p) => p.brand === "LOUIS VUITTON");
+	} else if (selectedValue === "10") {
+		newProducts = products.filter((p) => p.brand === "ADIDAS");
+	} else if (selectedValue === "11") {
+		newProducts = products.filter((p) => p.brand === "CONVERSE");
 	}
 
+	if (newProducts.length === 0) {
+		tbody.innerHTML = "Không có sản phẩm!";
+		return;
+	}
+
+	handleAddEvent(newProducts);
+}
+
+// Xử lý input search
+const inpSearchElement = document.getElementById("search");
+
+// Thêm sự kiện keydown cho input
+inpSearchElement.addEventListener("keydown", function (event) {
+	if (event.key === "Enter") {
+		// Nếu phím ấn là Enter, gọi hàm search
+		event.preventDefault(); // Ngăn chặn hành động mặc định của phím Enter (ví dụ: submit form)
+		handleSearch();
+	}
+});
+
+function handleSearch() {
+	let keySearch = inpSearchElement.value;
+	let newProducts = [];
+	newProducts = products.filter((p) =>
+		p.name.toLowerCase().includes(keySearch.toLowerCase())
+	);
+
+	// Cho hiện table
+	document.getElementById("check-all").checked = false;
+	document.getElementById("total-price").innerText = "";
+	table.style.display = "block";
+
+	// Nếu không tìm thấy sản phẩm nào thì thông báo ra
+	if (newProducts.length === 0) {
+		tbody.innerHTML = `Không tìm thấy sản phẩm tương ứng có tên là "${keySearch}"`;
+		inpSearchElement.value = "";
+		return;
+	}
+
+	handleAddEvent(newProducts);
+
+	inpSearchElement.value = "";
+}
+
+function handleAddEvent(newProducts) {
 	// In sản phẩm ra table
 	render(newProducts);
 

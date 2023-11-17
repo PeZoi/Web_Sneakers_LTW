@@ -164,7 +164,7 @@
 
         errorSelector: ".form-message",
         rules: [
-        Validator.isRequired("#user", "Vui lòng nhập tên tài khoản"),
+          Validator.isRequired("#user", "Vui lòng nhập tên tài khoản"),
           Validator.minLength("#user", 8),
           // Validator.isRequired("#user", "Vui lòng nhập tên tài khoản"),
           Validator.isEmail("#email"),
@@ -190,23 +190,6 @@
           console.log(data);
         },
       });
-
-      // Validator({
-      //   form:'#form-1',
-      //   formGroupSelector: '.form-group',
-      //   errorSelector: '.form-message',
-      //     rules: [
-
-      //       Validator.isRequired('input[name="gender"]', "Vui lòng chọn giới tính"),
-      //       Validator.isRequired('input[name="hobbies[]"]', "Vui lòng chọn sở thích"),
-      //       Validator.isRequired("#nationality", "Vui lòng chọn quốc tịch"),
-      //       Validator.maxLength('#note', 200)
-      //     ],
-      //     onSubmit: function (data) {
-      //       // Call API
-      //       console.log(data);
-      //     }
-      // });
 
 
     });

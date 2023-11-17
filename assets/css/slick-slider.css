@@ -1,0 +1,59 @@
+/* Thêm CSS cho slider và slider-nav */
+.slider-container {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider {
+	position: relative;
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+	flex: 0 0 100%;
+}
+
+.slider img {
+	width: 100%;
+	opacity: 1;
+}
+
+.slider-nav {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.slider-nav img {
+	width: 100px;
+	/* Điều chỉnh kích thước của các hình ảnh trong slider-nav */
+	margin: 0 10px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.slider-nav .active {
+	opacity: 1;
+}
+
+#next {
+	position: absolute;
+	background-color: transparent;
+	border: 0;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+#prev {
+	position: absolute;
+	background-color: transparent;
+	border: 0;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
