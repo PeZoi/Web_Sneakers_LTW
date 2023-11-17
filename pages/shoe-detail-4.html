@@ -17,6 +17,9 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Slick -->
+   <link rel="stylesheet" href="../assets/css/slick-slider.css">
 </head>
 
 <body>
@@ -393,38 +396,19 @@
    <div class="body grid wide" style="margin-top: 22px;">
       <div class="row">
          <div class="l-5">
-            <div class="slider slider-single">
-               <div>
-                  <img src="../assets/img/shoe/giay-4.jpg" alt="">
+            <div class="slider-container">
+               <div class="slider">
+                  <div class="slides">
+                     <img src="#" alt="" id="slides-img">
+                     <button type="button" id="next" onclick="next()"><img src="../assets/img/icon-next.svg"
+                           alt=""></button>
+                     <button type="button" id="prev" onclick="previous()"><img src="../assets/img/icon-pre.svg"
+                           alt=""></button>
+                  </div>
                </div>
-               <div>
-                  <img src="../assets/img/shoe/giay-4.1.png" alt="">
-               </div>
-               <div>
-                  <img src="../assets/img/shoe/giay-4.2.png" alt="">
-               </div>
-               <div>
-                  <img src="../assets/img/shoe/giay-4.3.png" alt="">
-               </div>
-               <div>
-                  <img src="../assets/img/shoe/giay-4.4.png" alt="">
-               </div>
-            </div>
-            <div class="slider slider-nav">
-               <div>
-                  <img src="../assets/img/shoe/giay-4.jpg" alt="" width="100%">
-               </div>
-               <div>
-                  <img src="../assets/img/shoe/giay-4.1.png" alt="" width="100%">
-               </div>
-               <div>
-                  <img src="../assets/img/shoe/giay-4.2.png" alt="" width="100%">
-               </div>
-               <div>
-                  <img src="../assets/img/shoe/giay-4.3.png" alt="" width="100%">
-               </div>
-               <div>
-                  <img src="../assets/img/shoe/giay-4.4.png" alt="" width="100%">
+
+               <div class="slider-nav" id="slider-nav">
+
                </div>
             </div>
          </div>
@@ -1022,10 +1006,10 @@
    </div>
    </div>
 
-   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   <script type="text/javascript" src="../assets/slick/slick.min.js"></script>
-   <script type="text/javascript" src="../assets/js/slick-slider.js"></script>
+   <script>
+      const images = ["../assets/img/shoe/giay-4.jpg", "../assets/img/shoe/giay-4.1.png", "../assets/img/shoe/giay-4.2.png", "../assets/img/shoe/giay-4.3.png"];
+   </script>
+   <script src="../assets/js/slick-slider.js"></script>
 </body>
 
 </html>
